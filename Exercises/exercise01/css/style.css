@@ -9,13 +9,48 @@ Some description of the CSS styling
 
 /* Actual CSS goes below here! */
 
-p{
-  color: blue;
-  font-size: 2em;
+body {
+  height: 100%;
+  width: 100%;
+  margin:0 auto;
+  background-image: url(../images/desk);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+}
+
+h2{
+  color: pink;
+  font-size: 1em;
   text-align: center;
   font-family: Helvetica;
-  margin-top: 43vh;
-  border: 3px dashed yellow;
-  padding: 10px;
+}
 
+h1{
+  color: pink;
+  font-size: 4.5em;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  margin-top: 20vh;
+}
+
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left h1 {
+  animation: slide-left 3s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
