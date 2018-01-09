@@ -1,0 +1,21 @@
+/*
+
+Title of project
+Author's name
+
+Some description of the CSS styling
+
+*/
+
+/* Actual CSS goes below here! */
+
+p{
+  color: blue;
+  font-size: 2em;
+  text-align: center;
+  font-family: Helvetica;
+  margin-top: 43vh;
+  border: 3px dashed yellow;
+  padding: 10px;
+
+}
