@@ -13,26 +13,25 @@ body {
   height: 100%;
   width: 100%;
   margin:0 auto;
-  background-image: url(../images/desk);
-  background-size: cover;
-  background-position: center;
-  background-color: white;
+  background-image: url("../images/desk.jpg");
+  background-size: 100%;
+  background-color: black;
 }
 
 h2{
-  color: pink;
-  font-size: 1em;
+  color: teal;
+  font-size: 1.5em;
   text-align: center;
   font-family: Helvetica;
 }
 
 h1{
-  color: pink;
+  color: teal;
   font-size: 4.5em;
   text-align: center;
   font-family: Helvetica;
   font-weight: bold;
-  margin-top: 20vh;
+  margin-top: 18vh;
 }
 
 div.slide-left {
@@ -41,6 +40,10 @@ div.slide-left {
 }
 div.slide-left h1 {
   animation: slide-left 3s;
+}
+
+div.slide-left h2 {
+animation: slide-left 6s;
 }
 
 @keyframes slide-left {
