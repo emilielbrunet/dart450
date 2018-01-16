@@ -10,10 +10,16 @@ Description of what the script does...
 
 $(document).ready() {
 
-  $('#exampleButton').on('click',function () {
-    $('.exampleClass').animate({
-      color: 'red'
-    },1000);
+  $(function () {
+      $('#inputDatabaseName').keypress(function () {
+          var $this = $(this),
+              $div = $(this).parent();
+          if ($this.val().length > 0) {
+              $div.addClass("hasContent");
+          } else {
+              $div.removeClass("hasContent");
+          }
+      });
   });
 
 }
