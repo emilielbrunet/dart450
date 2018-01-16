@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
-  $('.exampleClass').on('click',function () {
-    $('.exampleClass').css({
-      color: 'red'
-    })
+  $('#exampleButton').on('click',function() {
+    $('#exampleDiv').text($('#exampleInput').val());
   });
+
 });
