@@ -27,8 +27,38 @@ height: 100%;
 
 #button1 {
 	color: blue;
+	font-size: 13px;
 }
 
+#button2 {
+	color: gold;
+	font-size: 13px;
+}
+
+#button3 {
+	color: Red;
+	font-size: 13px;
+}
+
+#button4 {
+	color: deepPink;
+	font-size: 13px;
+}
+
+#button5 {
+	color: Green;
+	font-size: 13px;
+}
+
+#button6 {
+	color: darkViolet;
+	font-size: 13px;
+}
+
+#button7 {
+	color: orange;
+	font-size: 13px;
+}
 
 
 /* My Butterflies */

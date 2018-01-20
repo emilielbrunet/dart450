@@ -15,8 +15,7 @@ $(function () {
     function showDiv () {
         divs.hide()
             .filter(function (index) { return index === counter % 6; })
-            .fadeIn('fast');
-
+			.fadeIn('fast');
         counter++;
     }
 
