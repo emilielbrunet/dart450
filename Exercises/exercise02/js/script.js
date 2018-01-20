@@ -7,21 +7,24 @@ Butterfly Study
 Description of what the script does...
 
 **********************************************/
+$(function () {
 
-	$(document).ready(function () {
-var myVar = setInterval(function(){ setOpacity() }, 100);
- 
-function setOpacity() {
-  var x = document.getElementById("#bf3");
-  x.style.opacity = x.style.opacity ===
-"0" ? "1" : "0";
-}
-				 
-function stopOpacity() {
-  clearInterval(myVar);
-}
- 
-//		
-//		         function reduceOpacity() {
-//            $('test').setOpacity( 0.5 );
+    var counter = 0,
+        divs = $('#bf1, #bf2, #bf3, #bf4, #bf9, #bf8');
+
+    function showDiv () {
+        divs.hide()
+            .filter(function (index) { return index === counter % 6; })
+            .fadeIn('fast');
+
+        counter++;
+    }
+
+    showDiv();
+
+    setInterval(function () {
+        showDiv();
+    }, 1.5 * 150);  
+
 });
+
