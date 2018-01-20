@@ -4,7 +4,13 @@ DART 450, Winter 2018
 Butterfly Study
 Émilie Brunet
 
-Some description of the CSS styling
+The CSS provides styling for SVGs, text, and buttons.
+These styles include:
+- fonts
+- colours
+- positioning of elements
+- size
+- etc.
 
 */
 
@@ -12,16 +18,30 @@ body {
 height: 100%;
 }
 
-#submit {
-  text-align: center;
+#title {
+text-align: center;
   font-family: helvetica;
+	display: inline;
+	width: 100%;
+	font-size: 1.7em;
+	padding: 100px;
+}
+
+#submit {
+display: inline;
+}
+
+#input1 {
+	margin: 0 auto;
+	text-align: center;
+		font-family: helvetica;
 }
 
 #selectors {
 	width: 100%;
 	text-align: center;
 	position: absolute;
-	top: 100px;
+	top: 150px;
 	font-family: helvetica;
 }
 

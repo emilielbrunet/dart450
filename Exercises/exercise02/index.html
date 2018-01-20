@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <!-- ************************************************************************
 
 DART 450, Winter 2018
-Butterfly Study
+Butterfly Exercise
 Émilie Brunet
 
 Description of project and purpose of HTML...
@@ -10,11 +11,13 @@ This is an experiment in interactive web design.
 Viewers get to interact with a butterfly. At first it looks like it might be dead,
 but it is in fact able to move around with a little help.
 
-The HTML provides the prompt to the viewer and hold the svgs being manpulated.
+The HTML provides:
+- a prompt for the viewer ton know how to interact with the site content
+- 8 SVGs
+- buttons for manipulating the colour of the SVGs
+- An input + button
 
 ************************************************************************ -->
-
-<!DOCTYPE html>
 
 <html lang="en">
 
@@ -38,13 +41,17 @@ The HTML provides the prompt to the viewer and hold the svgs being manpulated.
 
 </head>
 
-<!-- Bellow you will find 7 SVGs of butterlfies and a prompt. -->
-
 <body>
-
-<div id="submit">
-<h1> Make the butterfly beautiful </h1>
+<div id="title">
+<div> This butterfly is <p id="submit">beautiful</p>!</div>
 </div>
+
+<div id="input1">
+  <label id="exampleLabel" for="exampleInput">Enter a new adjective:</label>
+  <input id="exampleInput"></input>
+  <button id="exampleButton">Enter</button>
+</div>
+
 
 <div id="Butterflies">
   <!-- SVG 1 Default-->

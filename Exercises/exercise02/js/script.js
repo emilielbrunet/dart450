@@ -6,6 +6,8 @@ Butterfly Study
 
 Description of what the script does...
 
+The script creates an animation by switching out the classes for 6 SVGs at set intervals.
+
 **********************************************/
 $(function () {
 
@@ -25,5 +27,12 @@ $(function () {
         showDiv();
     }, 1.5 * 150);  
 
+	
 });
 
+	$(document).ready(function () {
+		
+$('#exampleButton').on('click',function() {
+$('#submit').text($('#exampleInput').val());
+});
+});
