@@ -1,0 +1,102 @@
+/*
+
+DART 450, Winter 2018
+Exercise 3
+Émilie Brunet
+
+Some description of the CSS styling
+
+*/
+
+body {
+  width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#element1 {
+	height: 400px;
+	width: 400px;
+	position:absolute;
+	background-size: cover;
+	top: 0%;
+	left: -5%;
+	background-image: url(../images/wire3.png);
+	transform: rotate(180deg);
+	display: block;
+	z-index: -1;
+}
+
+#element2 {
+	height: 50vh;
+	width: 100vw;
+	position:absolute;
+	z-index: 12;
+	background-size: cover;
+	top: 400px;
+	left: 0;
+	background-image: url(../images/wire4.png);
+	display: block;
+}
+
+#element3 {
+	height: 50vh;
+	width: 50vw;
+	position:absolute;
+	z-index: 12;
+	background-size: cover;
+	top: 0px;
+	left: 500px;
+	background-image: url(../images/wire5.png);
+	transform: rotate(180deg);
+	display: block;
+}
+
+#element4 {
+	height: 50vh;
+	width: 50vw;
+	position:absolute;
+	z-index: 3;
+	background-size: cover;
+	top: 150px;
+	left: 500px;
+	background-image: url(../images/wire6.png);
+	display: block;
+}
+
+#element5 {
+	height: 50vh;
+	width: 50vw;
+	position:absolute;
+	z-index: 3;
+	background-size: cover;
+	bottom: 100px;
+	left: 62vw;
+	background-image: url(../images/wire8.png);
+	display: block;
+	transform: rotate(-90deg);
+}
+
+#element6 {
+	height: 25vh;
+	width: 25vw;
+	position:absolute;
+	z-index: 3;
+	background-size: cover;
+	top: 220px;
+	left: 10vw;
+	background-image: url(../images/wire10.png);
+	display: block;
+}
+
+#element7 {
+	height: 25vh;
+	width: 25vw;
+	position:absolute;
+	z-index: 2;
+	background-size: cover;
+	top: 100px;
+	left: 20vw;
+	background-image: url(../images/wire11.png);
+	display: block;
+}
