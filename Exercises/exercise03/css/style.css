@@ -14,6 +14,44 @@ body {
 	margin: auto;
 }
 
+#overlay1 {
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.8);
+	z-index: 98;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#scroll1 {
+	font-family: Helvetica, sans-serif;
+	font-size: 19px;
+	z-index: 99;
+	position: absolute;
+	top: 80vh;
+	text-align: center;
+	margin: auto;
+	left: 45.5vw;
+	color: white;
+	    -webkit-animation: mymove 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 1s infinite;
+	text-decoration: none;
+	display: none;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {top: 80.5vh;}
+    to {top: 80vh;}
+}
+
+@keyframes mymove {
+    from {top: 80.5vh;}
+    to {top: 80vh;}
+}
+
 #element1 {
 	height: 400px;
 	width: 400px;
@@ -25,6 +63,7 @@ body {
 	transform: rotate(180deg);
 	display: block;
 	z-index: -1;
+	display: none;
 }
 
 #element2 {
@@ -33,10 +72,11 @@ body {
 	position:absolute;
 	z-index: 12;
 	background-size: cover;
-	top: 400px;
+	top: 48vh;
 	left: 0;
 	background-image: url(../images/wire4.png);
 	display: block;
+	display: none;
 }
 
 #element3 {
@@ -49,7 +89,7 @@ body {
 	left: 500px;
 	background-image: url(../images/wire5.png);
 	transform: rotate(180deg);
-	display: block;
+	display: none;
 }
 
 #element4 {
@@ -62,6 +102,7 @@ body {
 	left: 500px;
 	background-image: url(../images/wire6.png);
 	display: block;
+	display: none;
 }
 
 #element5 {
@@ -70,16 +111,17 @@ body {
 	position:absolute;
 	z-index: 3;
 	background-size: cover;
-	bottom: 100px;
-	left: 62vw;
+	top: 200px;
+	left: 58vw;
 	background-image: url(../images/wire8.png);
 	display: block;
 	transform: rotate(-90deg);
+	display: none;
 }
 
 #element6 {
-	height: 25vh;
-	width: 25vw;
+	height: 200px;
+	width: 300px;
 	position:absolute;
 	z-index: 3;
 	background-size: cover;
@@ -87,11 +129,12 @@ body {
 	left: 10vw;
 	background-image: url(../images/wire10.png);
 	display: block;
+	display: none;
 }
 
 #element7 {
-	height: 25vh;
-	width: 25vw;
+	height: 170px;
+	width: 300px;;
 	position:absolute;
 	z-index: 2;
 	background-size: cover;
@@ -99,4 +142,121 @@ body {
 	left: 20vw;
 	background-image: url(../images/wire11.png);
 	display: block;
+	display: none;
+}
+
+#s2 {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	display: none;
+}
+
+#iphone1{
+	height: 700px;
+	width: 450px;
+	background-image: url(../images/iPhonex-mockup-moeslah.png);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#timer {
+	position: absolute;
+	top: 185px;
+	left: 240px;
+	color: white;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	display: none;
+}
+
+#end {
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	position: absolute;
+	top: 541px;
+	left: 239px;
+	cursor: pointer;
+	display: none;
+}
+
+#end:hover{
+	background-color:rgba(0,0,0,0.2)
+}
+
+#iphonebound {
+	height: 700px;
+	width: 450px;
+	top: 102%;
+	left: 29%;
+	position: absolute;
+	display: none;
+}
+
+#bubble1 {
+		font-family: Helvetica, sans-serif;
+	font-size: 19px;
+	z-index: 99;
+	position: absolute;
+	top: 40vh;
+	text-align: center;
+	margin: auto;
+	left: 35.25vw;
+	color: white;
+	display: none;
+}
+
+#bubble2{
+	top: 115%;
+	left: 15%;
+	position: absolute;
+	height: 100px;
+	width: 200px;
+	color: white;
+	font-size: 19px;
+	font-family: Helvetica, sans-serif;
+	display: none;
+}
+
+#bubble3{
+	top: 125%;
+	left: 15%;
+	position: absolute;
+	height: 100px;
+	width: 225px;
+	color: white;
+	font-size: 19px;
+	font-family: Helvetica, sans-serif;
+	display: none;
+}
+
+#bubble4{
+	top: 143%;
+	left: 15%;
+	position: absolute;
+	height: 100px;
+	width: 225px;
+	color: white;
+	font-size: 19px;
+	font-family: Helvetica, sans-serif;
+	display: none;
+}
+
+#bubble5{
+	top: 153%;
+	left: 15%;
+	position: absolute;
+	height: 100px;
+	width: 225px;
+	color: white;
+	font-size: 19px;
+	font-family: Helvetica, sans-serif;
+	display: none;
 }
