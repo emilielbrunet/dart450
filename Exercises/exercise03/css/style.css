@@ -25,6 +25,10 @@ body {
 	display: none;
 }
 
+.hidden {
+	display: none;
+}
+
 #scroll1 {
 	font-family: Helvetica, sans-serif;
 	font-size: 19px;
@@ -61,9 +65,7 @@ body {
 	left: -5%;
 	background-image: url(../images/wire3.png);
 	transform: rotate(180deg);
-	display: block;
 	z-index: -1;
-	display: none;
 }
 
 #element2 {
@@ -75,8 +77,6 @@ body {
 	top: 48vh;
 	left: 0;
 	background-image: url(../images/wire4.png);
-	display: block;
-	display: none;
 }
 
 #element3 {
@@ -89,7 +89,6 @@ body {
 	left: 500px;
 	background-image: url(../images/wire5.png);
 	transform: rotate(180deg);
-	display: none;
 }
 
 #element4 {
@@ -101,8 +100,6 @@ body {
 	top: 150px;
 	left: 500px;
 	background-image: url(../images/wire6.png);
-	display: block;
-	display: none;
 }
 
 #element5 {
@@ -114,9 +111,7 @@ body {
 	top: 200px;
 	left: 58vw;
 	background-image: url(../images/wire8.png);
-	display: block;
 	transform: rotate(-90deg);
-	display: none;
 }
 
 #element6 {
@@ -128,8 +123,6 @@ body {
 	top: 220px;
 	left: 10vw;
 	background-image: url(../images/wire10.png);
-	display: block;
-	display: none;
 }
 
 #element7 {
@@ -141,8 +134,6 @@ body {
 	top: 100px;
 	left: 20vw;
 	background-image: url(../images/wire11.png);
-	display: block;
-	display: none;
 }
 
 #s2 {

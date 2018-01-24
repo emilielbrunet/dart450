@@ -10,19 +10,19 @@ Description of what the script does...
 
 $(document).ready(function () {
 
+    $('#element1').fadeIn(1000).removeClass('hidden');
+});
+
+
+});
+	
+});
+
 	function close_window() {
   if (confirm("Close Window?")) {
     close();
   }
 }
-
-	});
-
-setInterval(function (){
-	$('#element1, #element2, #element3, #element4, #element5, #element6, #element7').not('visible').show().addClass('visible');
-	
-},400);
-	
 	});
 	
 var hours = 0;
