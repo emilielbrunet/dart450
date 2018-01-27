@@ -26,12 +26,42 @@ body {
 }
 
 .hidden {
-	display: none;
+
+}
+
+.btn1 {
+	text-align: center;
+	margin: 0 auto;
+	position: absolute;
+	top: 48vh;
+	right: 48vw;
+	font-size: 18px;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: rgba(66,111,227,1.00);
+	cursor: pointer;
+	
+}
+
+.btn2 {
+	background-color:rgba(255,255,255,0.00);
+	border: solid rgba(0,0,0,0.00) 0px;
+	box-shadow: none;
+	color: white;
+	font-family: Helvetica, sans-serif;
+	font-size: 19px;
+	cursor: pointer;
+}
+
+.btn3 {
+	background-color: rgba(0,0,0,0.00);
+	cursor: pointer;
 }
 
 #scroll1 {
-	font-family: Helvetica, sans-serif;
-	font-size: 19px;
 	z-index: 99;
 	position: absolute;
 	top: 80vh;
@@ -66,6 +96,7 @@ body {
 	background-image: url(../images/wire3.png);
 	transform: rotate(180deg);
 	z-index: -1;
+		display: none;
 }
 
 #element2 {
@@ -77,6 +108,7 @@ body {
 	top: 48vh;
 	left: 0;
 	background-image: url(../images/wire4.png);
+		display: none;
 }
 
 #element3 {
@@ -89,6 +121,7 @@ body {
 	left: 500px;
 	background-image: url(../images/wire5.png);
 	transform: rotate(180deg);
+		display: none;
 }
 
 #element4 {
@@ -100,6 +133,7 @@ body {
 	top: 150px;
 	left: 500px;
 	background-image: url(../images/wire6.png);
+		display: none;
 }
 
 #element5 {
@@ -112,6 +146,7 @@ body {
 	left: 58vw;
 	background-image: url(../images/wire8.png);
 	transform: rotate(-90deg);
+		display: none;
 }
 
 #element6 {
@@ -123,6 +158,7 @@ body {
 	top: 220px;
 	left: 10vw;
 	background-image: url(../images/wire10.png);
+		display: none;
 }
 
 #element7 {
@@ -134,6 +170,7 @@ body {
 	top: 100px;
 	left: 20vw;
 	background-image: url(../images/wire11.png);
+		display: none;
 }
 
 #s2 {
@@ -157,7 +194,7 @@ body {
 	display: none;
 }
 
-#timer {
+#time {
 	position: absolute;
 	top: 185px;
 	left: 240px;
@@ -182,6 +219,21 @@ body {
 	background-color:rgba(0,0,0,0.2)
 }
 
+#one {
+	width: 59px;
+	height: 59px;
+	border-radius: 50%;
+	position: absolute;
+	top: 260px;
+	left: 160px;
+	cursor: pointer;
+	display: none;
+}
+
+#one:hover {
+	background-color:rgba(0,0,0,0.2)
+}
+
 #iphonebound {
 	height: 700px;
 	width: 450px;
@@ -195,11 +247,10 @@ body {
 		font-family: Helvetica, sans-serif;
 	font-size: 19px;
 	z-index: 99;
-	position: absolute;
-	top: 40vh;
 	text-align: center;
 	margin: auto;
-	left: 35.25vw;
+	position: relative;
+	top: 40vh;
 	color: white;
 	display: none;
 }
