@@ -204,7 +204,7 @@ body {
 	display: none;
 }
 
-#end {
+.end {
 	width: 58px;
 	height: 58px;
 	border-radius: 50%;
@@ -215,7 +215,7 @@ body {
 	display: none;
 }
 
-#end:hover{
+.end:hover{
 	background-color:rgba(0,0,0,0.2)
 }
 

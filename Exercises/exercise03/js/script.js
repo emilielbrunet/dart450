@@ -34,78 +34,7 @@ $(document).ready(function(){
 		$("#bubble2").delay(2500).fadeIn(400);
 		$("#bubble3").delay(5000).fadeIn(400);
 		$("#bubble4").delay(8000).fadeIn(400);
-});
-	});
-
-$(document).ready(function(){
-	  $(".btn3").click(function(){
-        $("#bubble5").delay(0).fadeIn(200);
-});
-	});
-
-//STOP WATCH
-$(document).ready(function(){
-function Stopwatch(text) {
-
-    this.text=text;
-
-    var	startAt	= 0;
-    var	lapTime	= 0;
-
-    var	now	= function() {
-        return (new Date()).getTime();
-    };
-
-    this.start = function() {
-        startAt	= startAt ? startAt : now();
-        this.timer = setInterval(redirect, 100, this);
-        function redirect(w) {
-            w.update();
-        }
-    };
-
-    this.stop = function() {
-        lapTime	= startAt ? lapTime + now() - startAt : lapTime;
-        startAt	= 0;
-        clearInterval(this.timer);
-
-    };
-
-    this.reset = function() {
-        lapTime = startAt = 0;
-    };
-
-    this.time = function() {
-        return lapTime + (startAt ? now() - startAt : 0);
-    };
-
-    var pad = function(num, size) {
-        var s = "0000" + num;
-        return s.substr(s.length - size);
-    };
-
-    this.formattedTime = function(){
-        var  m = s = ms = 0;
-        var newTime = this.time();
-
-        newTime = newTime % (60 * 60 * 1000);
-        m = Math.floor( newTime / (60 * 1000) );
-        newTime = newTime % (60 * 1000);
-        s = Math.floor( newTime / 1000 );
-        ms = newTime % 1000;
-
-        return pad(m, 2) + ':' + pad(s, 2) + ':' + pad(ms, 3);
-    };
-
-    this.update =  function(){
-        text.innerHTML = this.formattedTime();
-    };
-}
-	});
-/**********************************************	
-
-$(document).ready(function(){
-var hours = 0;
+		  var hours = 0;
 	var minutes = 0;
 	var seconds = 0;
 
@@ -119,19 +48,37 @@ setInterval(function () {
 	minutes = 0;
 		hours = hours + 1;
 	}
-$('#time').text(hours + ":" + ":" + seconds);
+	
+	var secondString = seconds;
+	if (seconds < 10) {
+		secondString = "0" + seconds;
+	}
+	
+		var minuteString = minutes;
+	if (minutes < 10) {
+		minuteString = "0" + minutes;
+	}
+	
+		var hourString = hours;
+	if (hours < 10) {
+		hourString = "0" + hours;
+	}
+$('#time').text(hourString + ":" + minuteString + ":" + secondString);
 },1000);
 
 });
 	});
-	
-	$(document).ready(function(){
+
+$(document).ready(function(){
+	  $(".btn3").click(function(){
+        $("#bubble5").delay(0).fadeIn(200);
+});
+	});
+
+/*$(document).ready(function(){
 	function close_window() {
-  if (confirm("Close Window?")) {
+  if $('#end') {
     close();
   }
-}
-	});
-	});
-	
-**********************************************/
+	);
+	});*/
