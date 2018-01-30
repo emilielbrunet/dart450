@@ -1,0 +1,44 @@
+/*
+
+Title of project
+Author's name
+
+Some description of the CSS styling
+
+*/
+
+/* Actual CSS goes below here! */
+
+body {
+  height: 100%;
+  width: 100%;
+  margin:0 auto;
+  background-image: url("../images/gridBG-05.png");
+  background-size: cover;
+}
+
+h1{
+	color: blue;
+  font-size: 4.5em;
+  text-align: center;
+  font-family: Rock Salt;
+  font-weight: bold;
+  margin-top: 34vh;
+	line-height: 24px;
+}
+
+h2{
+  color: red;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: indie flower;
+}
+
+p {
+	color: rgba(31,31,31,0.95);
+	font-size: 1.05em;
+	width: 80vw;
+	font-family: indie flower;
+	margin: auto;
+	
+}
