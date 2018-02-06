@@ -20,6 +20,12 @@ Description of project and purpose of HTML
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Coming+Soon|Give+You+Glory|Homemade+Apple|Indie+Flower|Reenie+Beanie|Rock+Salt|The+Girl+Next+Door" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/interactjs@1.2.9/dist/interact.min.js"></script>
+ <script src="js/script.js" content="text/javascript"></script>
+
 
 </head>
 
@@ -30,17 +36,28 @@ Description of project and purpose of HTML
 	<h1>Hello.</h1>
 
 <section id="bugs">
+
+	<div href="#" id="middle" class="bug"></div>
 	<img id="worm1" class="bug" src="images/bugs_high/buggy-06.png">
-	<img id="worm2" class="bug" src="images/bugs_high/buggy-07.png">
 	<img id="beetle1" class="bug" src="images/bugs_high/buggy-08.png">
-	<img id="beetle2" class="bug" src="images/bugs_high/buggy-09.png">
 	<img id="centi1" class="bug" src="images/bugs_high/buggy-10.png">
-	<img id="centi2" class="bug" src="images/bugs_high/buggy-11.png">
 	<img id="lady1" class="bug" src="images/bugs_high/buggy-12.png">
-	<img id="lady2" class="bug" src="images/bugs_high/buggy-13.png">
 	<img id="ant1" class="bug" src="images/bugs_high/buggy-14.png">
-	<img id="ant2" class="bug" src="images/bugs_high/buggy-15.png">
+	
+		<img id="worm2" class="bug" src="images/bugs_high/buggy-07.png">
+			<img id="beetle2" class="bug" src="images/bugs_high/buggy-09.png">
+				<img id="centi2" class="bug" src="images/bugs_high/buggy-11.png">
+					<img id="lady2" class="bug" src="images/bugs_high/buggy-13.png">
+						<img id="ant2" class="bug" src="images/bugs_high/buggy-15.png">
 </section>
+
+<div id="canvas"></div>
+
+<div class="resize-container">
+  <div class="resize-drag"></div>
+</div>
+
+
 
 </body>
 </html>
