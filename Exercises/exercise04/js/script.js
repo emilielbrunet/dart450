@@ -11,7 +11,7 @@ $(document).ready(function() {
   var date = new Date();
   var today = date.getDay();
   var todayName = "Nothing.";
-	
+
   if (today === 0) {
     todayName = "Sunday";
   }
@@ -33,24 +33,26 @@ $(document).ready(function() {
   else if (today === 6) {
     todayName = "Saturday";
   }
-	
+
+  $('#' + todayName.toLowerCase()).show();
+
   $('#today').text(todayName);
-	
-	
+
+
 	  var date = new Date();
   var date = date.getDate();
 $('#date').text(date);
-	
-	
+
+
 		  var date = new Date();
   var year = date.getFullYear();
 $('#year').text(year);
-	
-	
+
+
 		  var date = new Date();
   var month = date.getMonth();
 	  var todayMonth = "Nothing.";
-	
+
   if (month === 0) {
     todayMonth = "January";
   }
@@ -87,14 +89,13 @@ $('#year').text(year);
 		  else if (month === 11) {
     todayMonth = "December";
   }
-	
+
 $('#month').text(todayMonth);
 
 //Good day message
-	
+
 	if (new Date().getHours() < 18) {
     document.getElementById("demo").innerHTML = "Jolly good day, friend.";
 }
-	
+
 	});
-	
