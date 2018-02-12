@@ -84,7 +84,7 @@ p {
     height:500px;
     border: 10px solid black;
 	position: absolute;
-	top: 95%;
+	top: 150%;
 	margin: 10%;
 }
 .rectangle {
@@ -93,18 +93,17 @@ p {
 }
 
 .resize-drag {
-  background-color: #29e;
-  color: white;
-  font-size: 20px;
-  font-family: sans-serif;
+  background-image: url(../images/bugs_high/buggy-13.png);
+	background-size: cover;
   border-radius: 8px;
   padding: 20px;
   margin: 30px 20px;
-
   width: 120px;
-
-  /* This makes things *much* easier */
+	height: 120px;
   box-sizing: border-box;
+	position: absolute;
+	top: 95%;
+	border: 2px blue solid;
 }
 
 .resize-container {

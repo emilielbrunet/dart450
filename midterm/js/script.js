@@ -6,6 +6,7 @@ Midterm
 
 **********************************************/
 
+///////////////	SVG circle
 
 $(document).ready(function() {
 
@@ -26,7 +27,7 @@ $elements.each(function(i) {
     });
 });
 	
-//	re-sizable element
+///////////////	re-sizable element
 	
 	interact('.resize-drag')
   .draggable({
@@ -37,16 +38,13 @@ $elements.each(function(i) {
     },
   })
   .resizable({
-    // resize from all edges and corners
     edges: { left: true, right: true, bottom: true, top: true },
 
-    // keep the edges inside the parent
     restrictEdges: {
       outer: 'parent',
       endOnly: true,
     },
 
-    // minimum size
     restrictSize: {
       max: { width: 800, height: 400 }
     },
@@ -58,12 +56,11 @@ $elements.each(function(i) {
         x = (parseFloat(target.getAttribute('data-x')) || 0),
         y = (parseFloat(target.getAttribute('data-y')) || 0);
 
-    // update the element's style
     target.style.width  = event.rect.width + 'px';
     target.style.height = event.rect.height + 'px';
   });
 	
-	//	Rectangle draw tool
+///////////////	Rectangle draw tool
 
 initDraw(document.getElementById('canvas'));
 
