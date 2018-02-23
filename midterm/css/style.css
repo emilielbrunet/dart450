@@ -19,28 +19,28 @@ body {
 
 h1{
 	color: blue;
-  font-size: 3em;
+  font-size: 2em;
   text-align: left;
-	padding-left: 5%;
+	padding-left: 40px;
   font-family: Rock Salt;
   font-weight: bold;
-  margin-top: 12vh;
-	line-height: 24px;
+  margin-top: 20px;
 	display: inline-block;
 }
 
-h1:hover {
+/*h1:hover {
 	background-color: rgba(255,242,0,0.78);
 	height: 40px;
 	cursor: pointer;
 	
-}
+}*/
 
 h2{
   color: red;
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.15em;
   font-family: indie flower;
+	padding-left: 60px;
+	margin-top: -25px
 }
 
 p {
@@ -61,7 +61,7 @@ p {
 }
 
 .bug {
-	margin-top: 20%;
+	top: 250px;
 	width: 100px;
 	    position: absolute;
     -webkit-transition: all 1s linear;
@@ -70,16 +70,257 @@ p {
 	transform: translate(-50%, -50%);
 }
 
-.center {
-	transform: translate(-50%, -50%);
+.buttons1 {
+	width: 100px;
+	height: 35px;
+	position: absolute;
+	background-color: rgba(58,58,58,1.00);
+	border: solid 2px rgba(58,58,58,1.00);
+	cursor: pointer;
 }
 
-#middle {
-	text-decoration: none;
-	font-family: Rock Salt;
+.buttonsp1{
+	color: white;
+	padding-left: 27px;
+	padding-top: 7px;
+	
 }
 
-#canvas {
+#button1 {
+	top: 290px;
+	left: 10%;
+}
+
+#button2 {
+	top: 390px;
+	left: 10%;
+}
+
+#button3 {
+	top: 490px;
+	left: 10%;
+}
+
+#button4 {
+	top: 490px;
+	right: 10%;
+}
+
+#button5 {
+	top: 390px;
+	right: 10%;
+}
+
+#button6 {
+	top: 290px;
+	right: 10%;
+}
+
+#textbox1{
+	position: absolute;
+	top: 700px;
+	left: 10%;
+	background-color: rgba(255,255,255,1.00);
+	border: solid 2px rgba(58,58,58,1.00);
+	padding: 27px;
+	width: 500px;
+}
+
+#story {
+	width: 500px;
+}
+
+.inputButton {
+	display: inline-block;
+	height: 25px;
+	background-color: blue;
+	border: none;
+	width: 100px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.inputBar {
+	width: 200px;
+	border: solid 2px rgba(58,58,58,1.00);
+}
+
+#input1 {
+	position: absolute;
+	top: 700px;
+	right: 10%;
+}
+
+#input2 {
+	position: absolute;
+	top: 750px;
+	right: 10%;
+}
+
+#input3 {
+	position: absolute;
+	top: 800px;
+	right: 10%;
+}
+
+#input4 {
+	position: absolute;
+	top: 850px;
+	right: 10%;
+}
+
+#input5 {
+	position: absolute;
+	top: 900px;
+	right: 10%;
+}
+
+#boxes {
+	position: absolute;
+	top: 1200px;
+	background-color: pink;
+	 display: flex;
+  flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#box1 {
+	width: 10vw;
+	height: 161px;
+	background-color: red;
+	display: inline-block;
+	position: relative;
+	margin: 5px;
+}
+
+#box2 {
+	width: 20vw;
+	height: 161px;
+	background-color: blue;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box3 {
+	width: 30vw;
+	height: 161px;
+	background-color: yellow;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box4 {
+	width: 10vw;
+	height: 161px;
+	background-color: green;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box5 {
+	width: 24vw;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box6 {
+	width: 10vw;
+	height: 161px;
+	background-color: blue;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box7 {
+	width: 30vw;
+	height: 161px;
+	background-color: green;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box8 {
+	width: 20vw;
+	height: 161px;
+	background-color: red;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box9 {
+	width: 22vw;
+	height: 161px;
+	background-color: red;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box10 {
+	width: 10vw;
+	height: 161px;
+	background-color: blue;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box11 {
+	width: 30vw;
+	height: 161px;
+	background-color: yellow;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box12 {
+	width: 20vw;
+	height: 161px;
+	background-color: blue;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box9 {
+	width: 20vw;
+	height: 161px;
+	background-color: yellow;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box9 {
+	width: 30vw;
+	height: 161px;
+	background-color: red;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+#box9 {
+	width: 20vw;
+	height: 161px;
+	background-color: green;
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+/*#canvas {
     width:900px;
     height:500px;
     border: 10px solid black;
@@ -110,4 +351,4 @@ p {
   display: inline-block;
   width: 100%;
   height: 240px;
-}
+}*/
