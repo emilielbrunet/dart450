@@ -32,7 +32,7 @@ h1{
 	background-color: rgba(255,242,0,0.78);
 	height: 40px;
 	cursor: pointer;
-	
+
 }*/
 
 h2{
@@ -83,7 +83,7 @@ p {
 	color: white;
 	padding-left: 27px;
 	padding-top: 7px;
-	
+
 }
 
 #button1 {
@@ -179,7 +179,6 @@ p {
 #boxes {
 	position: absolute;
 	top: 1200px;
-	background-color: pink;
 	 display: flex;
   flex-wrap: wrap;
 	justify-content: space-around;
