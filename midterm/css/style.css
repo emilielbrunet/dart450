@@ -15,22 +15,29 @@ body {
 }
 
 h1{
-	color: blue;
+	color: #2264F2;
   font-size: 2em;
   text-align: left;
 	padding-left: 40px;
   font-family: Rock Salt;
   font-weight: bold;
-  margin-right: 100px;
+  margin-right: 20px;
 	display: inline-block;
+  width: 280px;
+  margin-top: -8px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 h2{
-  color: red;
-  font-size: 1.15em;
+  color: rgba(155,155,155,1);
+  font-size: 1.27em;
   font-family: indie flower;
-	padding-left: 60px;
-	margin-top: -25px
+	padding-left: 0px;
+	margin-top: -35px;
+  width: 280px;
+  line-height: 40px;
+  height: 35px;
+  display: inline-block;
 }
 
 p {
@@ -42,51 +49,89 @@ p {
   max-width: 50vw;
 }
 
+nav {
+  background-color: #F9CF00;
+  height: 45px;
+  padding-right:50px;
+}
+
+hr {
+    border: 1px solid black;
+    margin-top: 0px;
+}
+
+.menu {
+  color: black;
+  font-size: 1.25em;
+  margin-left: 40px;
+  text-decoration: none;
+  font-family: indie flower;
+  line-height: 45px;
+  float: right;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.menu:hover {
+  background-color: #F09E56;
+}
+
+.menu:target {
+  background-color: #F09E56;
+}
+
 /* Pixel Art */
 
-#art {
-  display: table;
+.pen {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#pixel2 {
+  display: inline-block;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 1px 1px -3px 1px;
+}
+
+#artboard2 {
   border-spacing: 1px;
   background-color: black;
-  border: 5px solid black;
-  margin-left: 8%;
-}
-
-.row {
-  display: table-row;
-}
-
-.pixel {
-  display: table-cell;
-  background-color: white;
-  width: 35px;
-  height: 35px;
-}
-
-.pen {
-  display: inline-inline-block;
-  width: 35px;
-  height: 35px;
-  border: 2px solid black;
+  border: 1px solid black;
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 1025px;
+  margin-bottom: 40px;
 }
 
 /* Madlib */
 
+#madlib {
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
 #story{
-	position: absolute;
-	top: 700px;
+  position: absolute;
 	padding: 27px;
   z-index: -99;
   width: 50%;
   left: 40%;
-  background-color: pink;
+  background-color: #F09E56;
+  border: solid 2px black;
 }
 
 .inputButton {
 	display: inline-block;
 	height: 35px;
   line-height: 35px;
-	background-color: blue;
+	background-color: #2264F2;
 	border: none;
 	width: 100px;
 	color: white;
@@ -94,214 +139,111 @@ p {
 	text-align: center;
 	cursor: pointer;
   position: absolute;
-  top: 1020px;
-  left: 8%;
+  margin-top: 320px;
   	font-family: indie flower;
 }
 
 .inputBar {
-	width: 200px;
+	width: 300px;
 	border: solid 2px rgba(58,58,58,1.00);
+  margin-top: 5px;
 }
 
 #input1 {
 	position: absolute;
-	top: 700px;
-	left: 8%;
 }
 
 #input2 {
 	position: absolute;
-	top: 780px;
-	left: 8%;
+	margin-top: 80px;
 }
 
 #input3 {
 	position: absolute;
-	top: 860px;
-	left: 8%;
+	margin-top: 160px;
 }
 
 #input4 {
 	position: absolute;
-	top: 940px;
-	left: 8%;
+	margin-top: 240px;
 }
 
 /* Boxes */
 
 #boxes {
-	position: absolute;
-	top: 1200px;
+    margin-top: 50px;
 	 display: flex;
   flex-wrap: wrap;
-	justify-content: space-around;
+  width: 1025px;
+  margin-left: 40px;
+  background-color: black;
+    border: 1px solid black;
+}
+
+.box {
+  width: 203px;
+	height: 161px;
+	display: inline-block;
+	position: relative;
+  margin: 1px;
 }
 
 #box1 {
-	width: 10vw;
-	height: 161px;
-	background-color: red;
-	display: inline-block;
-	position: relative;
-	margin: 5px;
+	background-color: #F09E56;
 }
 
 #box2 {
-	width: 20vw;
-	height: 161px;
-	background-color: blue;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #2264F2;
 }
 
 #box3 {
-	width: 30vw;
-	height: 161px;
-	background-color: yellow;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #F9CF00;
 }
 
 #box4 {
-	width: 10vw;
-	height: 161px;
-	background-color: green;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #9B9B9B;
 }
 
 #box5 {
-	width: 24vw;
-	height: 100px;
-	background-color: red;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #F09E56;
 }
 
 #box6 {
-	width: 10vw;
-	height: 161px;
-	background-color: blue;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #F9CF00;
 }
 
 #box7 {
-	width: 30vw;
-	height: 161px;
-	background-color: green;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #9B9B9B;
 }
 
 #box8 {
-	width: 20vw;
-	height: 161px;
-	background-color: red;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #F09E56;
 }
 
 #box9 {
-	width: 22vw;
-	height: 161px;
-	background-color: red;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #2264F2;
 }
 
 #box10 {
-	width: 10vw;
-	height: 161px;
-	background-color: blue;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #F9CF00;
 }
 
 #box11 {
-	width: 30vw;
-	height: 161px;
-	background-color: yellow;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #9B9B9B;
 }
 
 #box12 {
-	width: 20vw;
-	height: 161px;
-	background-color: blue;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+	background-color: #2264F2;
 }
 
-#box9 {
-	width: 20vw;
-	height: 161px;
-	background-color: yellow;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+#box13 {
+	background-color: #F9CF00;
 }
 
-#box9 {
-	width: 30vw;
-	height: 161px;
-	background-color: red;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+#box14 {
+	background-color: #F09E56;
 }
 
-#box9 {
-	width: 20vw;
-	height: 161px;
-	background-color: green;
-	position: relative;
-	display: inline-block;
-	margin: 5px;
+#box15 {
+	background-color: #9B9B9B;
 }
-
-/*#canvas {
-    width:900px;
-    height:500px;
-    border: 10px solid black;
-	position: absolute;
-	top: 150%;
-	margin: 10%;
-}
-.rectangle {
-    border: 1px solid blue;
-    position: absolute;
-}
-
-.resize-drag {
-  background-image: url(../images/bugs_high/buggy-13.png);
-	background-size: cover;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 30px 20px;
-  width: 120px;
-	height: 120px;
-  box-sizing: border-box;
-	position: absolute;
-	top: 95%;
-	border: 2px blue solid;
-}
-
-.resize-container {
-  display: inline-block;
-  width: 100%;
-  height: 240px;
-}*/

@@ -6,21 +6,25 @@ Midterm
 
 **********************************************/
 
-///////////////	SVG circle
-
 $(document).ready(function() {
 
-  function setPixelColour(pixel)
-  {
-    pixel.style.backgroundColor = 'penColour';
-  }
+var totalDivsToAdd = 512; 
 
-  var penColour = 'black';
+for (var i = 0; i < totalDivsToAdd; i++) {
+  var $div = $('<div id="pixel2" class="pixel"></div>');
+  $('#artboard2').append($div);
+}
 
-  function setPenColour(pen)
-  {
-    penColour = pen;
-  }
+var penColour = 'black'
+
+function setPenColour(pen)
+{
+  penColour = pen;
+}
+
+$(".pixel").on("click", function() {
+    $(this).css("background", "black");
+});
 
 window.onload = function () {
         var name = document.querySelector("#name");
@@ -39,14 +43,18 @@ window.onload = function () {
             " with clever wit for hours. By the time " +  name.value +
             " stops laughing, the sun is already setting and pretty soon it is too late to " + goal.value + ". " + name.value +
             " finds that another day has passed without the chance to " + goal.value + " and walks back to the " + place.value +
-            ", looking forward to the next day, hoping to finally get to " + goal.value + ".</p>";
+            ". " + name.value + " looks forward to the next day, hoping to finally get to live out that ultimate goal with " + friend.value + ".</p>";
 
            story.innerHTML = launchedStory;
         }
-}
+};
 
 $('#launch').click(function(){
               $('#prompt').fadeOut(500);
+});
+
+$(".box").on("click", function() {
+    $(this).css("background", "black");
 });
 
 });
