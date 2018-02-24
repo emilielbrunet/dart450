@@ -1,13 +1,9 @@
 /*
 
-Title of project
-Author's name
-
-Some description of the CSS styling
+Midterm
+Émilie Brunet
 
 */
-
-/* Actual CSS goes below here! */
 
 body {
   height: 100%;
@@ -15,6 +11,7 @@ body {
   margin:0 auto;
   background-image: url("../images/gridBG-05.png");
   background-size: 100%;
+  max-width: 100%;
 }
 
 h1{
@@ -24,16 +21,9 @@ h1{
 	padding-left: 40px;
   font-family: Rock Salt;
   font-weight: bold;
-  margin-top: 20px;
+  margin-right: 100px;
 	display: inline-block;
 }
-
-/*h1:hover {
-	background-color: rgba(255,242,0,0.78);
-	height: 40px;
-	cursor: pointer;
-
-}*/
 
 h2{
   color: red;
@@ -45,100 +35,68 @@ h2{
 
 p {
 	color: rgba(31,31,31,0.95);
-	font-size: 1.05em;
+	font-size: 1.15em;
 	width: 80vw;
 	font-family: indie flower;
 	margin: auto;
+  max-width: 50vw;
 }
 
-#bugs {
-    position: relative;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	top: 50%;
-	left: 46.5%;
+/* Pixel Art */
+
+#art {
+  display: table;
+  border-spacing: 1px;
+  background-color: black;
+  border: 5px solid black;
+  margin-left: 8%;
 }
 
-.bug {
-	top: 250px;
-	width: 100px;
-	    position: absolute;
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    transition: all 1s linear;
-	transform: translate(-50%, -50%);
+.row {
+  display: table-row;
 }
 
-.buttons1 {
-	width: 100px;
-	height: 35px;
-	position: absolute;
-	background-color: rgba(58,58,58,1.00);
-	border: solid 2px rgba(58,58,58,1.00);
-	cursor: pointer;
+.pixel {
+  display: table-cell;
+  background-color: white;
+  width: 35px;
+  height: 35px;
 }
 
-.buttonsp1{
-	color: white;
-	padding-left: 27px;
-	padding-top: 7px;
-
+.pen {
+  display: inline-inline-block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid black;
 }
 
-#button1 {
-	top: 290px;
-	left: 10%;
-}
+/* Madlib */
 
-#button2 {
-	top: 390px;
-	left: 10%;
-}
-
-#button3 {
-	top: 490px;
-	left: 10%;
-}
-
-#button4 {
-	top: 490px;
-	right: 10%;
-}
-
-#button5 {
-	top: 390px;
-	right: 10%;
-}
-
-#button6 {
-	top: 290px;
-	right: 10%;
-}
-
-#textbox1{
+#story{
 	position: absolute;
 	top: 700px;
-	left: 10%;
-	background-color: rgba(255,255,255,1.00);
-	border: solid 2px rgba(58,58,58,1.00);
 	padding: 27px;
-	width: 500px;
-}
-
-#story {
-	width: 500px;
+  z-index: -99;
+  width: 50%;
+  left: 40%;
+  background-color: pink;
 }
 
 .inputButton {
 	display: inline-block;
-	height: 25px;
+	height: 35px;
+  line-height: 35px;
 	background-color: blue;
 	border: none;
 	width: 100px;
 	color: white;
+  font-size: 1.25em;
 	text-align: center;
 	cursor: pointer;
+  position: absolute;
+  top: 1020px;
+  left: 8%;
+  	font-family: indie flower;
 }
 
 .inputBar {
@@ -149,32 +107,28 @@ p {
 #input1 {
 	position: absolute;
 	top: 700px;
-	right: 10%;
+	left: 8%;
 }
 
 #input2 {
 	position: absolute;
-	top: 750px;
-	right: 10%;
+	top: 780px;
+	left: 8%;
 }
 
 #input3 {
 	position: absolute;
-	top: 800px;
-	right: 10%;
+	top: 860px;
+	left: 8%;
 }
 
 #input4 {
 	position: absolute;
-	top: 850px;
-	right: 10%;
+	top: 940px;
+	left: 8%;
 }
 
-#input5 {
-	position: absolute;
-	top: 900px;
-	right: 10%;
-}
+/* Boxes */
 
 #boxes {
 	position: absolute;
