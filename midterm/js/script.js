@@ -8,6 +8,8 @@ Midterm
 
 $(document).ready(function() {
 
+/*** Pixel Draw ***/
+
 var totalDivsToAdd = 512; 
 
 for (var i = 0; i < totalDivsToAdd; i++) {
@@ -15,16 +17,11 @@ for (var i = 0; i < totalDivsToAdd; i++) {
   $('#artboard2').append($div);
 }
 
-var penColour = 'black'
-
-function setPenColour(pen)
-{
-  penColour = pen;
-}
-
 $(".pixel").on("click", function() {
     $(this).css("background", "black");
 });
+
+/*** Madlib ***/
 
 window.onload = function () {
         var name = document.querySelector("#name");
@@ -50,11 +47,20 @@ window.onload = function () {
 };
 
 $('#launch').click(function(){
-              $('#prompt').fadeOut(500);
+              $('#story').fadeIn(100);
 });
+
+/*** Boxes ***/
 
 $(".box").on("click", function() {
     $(this).css("background", "black");
+});
+
+/*** Bugs ***/
+
+
+$(".buggy").on("click", function() {
+    $(this).css("opacity", "0");
 });
 
 });

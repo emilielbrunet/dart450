@@ -39,7 +39,7 @@ div.slide-left {
   overflow:hidden;
 }
 div.slide-left h1 {
-  animation: slide-left 3s;
+  animation: slide-left 13s;
 }
 
 div.slide-left h2 {
