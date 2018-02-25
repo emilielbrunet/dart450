@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 /*** Pixel Draw ***/
 
-var totalDivsToAdd = 512; 
+var totalDivsToAdd = 400; 
 
 for (var i = 0; i < totalDivsToAdd; i++) {
   var $div = $('<div id="pixel2" class="pixel"></div>');
@@ -18,7 +18,7 @@ for (var i = 0; i < totalDivsToAdd; i++) {
 }
 
 $(".pixel").on("click", function() {
-    $(this).css("background", "black");
+    $(this).css("background", "#F09E56");
 });
 
 /*** Madlib ***/
@@ -47,20 +47,18 @@ window.onload = function () {
 };
 
 $('#launch').click(function(){
-              $('#story').fadeIn(100);
+              $('#story').fadeIn(100).css("display", "inline-block");
+              $('#prestory').css({"margin": "1px", "display": "inline-block"});
 });
 
-/*** Boxes ***/
-
-$(".box").on("click", function() {
-    $(this).css("background", "black");
-});
 
 /*** Bugs ***/
 
 
 $(".buggy").on("click", function() {
     $(this).css("opacity", "0");
-});
 
 });
+});
+
+/*** Boxes  (see boxes.html) ***/

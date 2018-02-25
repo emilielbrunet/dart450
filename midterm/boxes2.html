@@ -14,34 +14,19 @@ This is my midterm assignment
 
 <head>
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-  <title>Scrap Paper</title>
-
   <link rel="stylesheet" type="text/css" href="css/style.css" />
  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Coming+Soon|Give+You+Glory|Homemade+Apple|Indie+Flower|Reenie+Beanie|Rock+Salt|The+Girl+Next+Door" rel="stylesheet">
-</head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/interactjs@1.2.9/dist/interact.min.js"></script>
+ <script src="js/script.js" content="text/javascript"></script>
 
-<!-- Comment about the body of the HTML -->
 
-<body>
 
-  <nav>
-      <a class="menu" href="boxes.html">Boxes</a>
-      <a class="menu" href="bugs.html">Bugs</a>
-      <a class="menu" href="madlib.html">Story Generator</a>
-      <a class="menu" href="index.html">Pixel Draw</a>
-  </nav>
+<title>Scrap Paper</title>
 
-    <hr>
-
-	<h1>Scrap Paper</h1>
-  <h2>Find the matching letters!</h2>
-
-  <div id="memory_board"></div>
-  <script>newBoard();</script>
-
-  <script>
+<script>
 // Scripted By Adam Khoury in connection with the following video tutorial:
 // http://www.youtube.com/watch?v=c_ohDPWmsM0
 var memory_array = ['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J','K','K','L','L'];
@@ -106,6 +91,24 @@ function memoryFlipTile(tile,val){
 	}
 }
 </script>
+</head>
+<body>
 
+
+  <nav>
+    <a class="menu" href="boxes2.html">Memory Game</a>
+    <a class="menu" href="bugs.html">Squish Bugs</a>
+    <a class="menu"href="madlib.html">Story Generator</a>
+    <a class="menu" href="index.html">Pixel Draw</a>
+  </nav>
+
+    <hr>
+
+	<h1>Scrap Paper</h1>
+  <h2>Find the matching letters!</h2>
+
+
+<div id="memory_board"></div>
+<script>newBoard();</script>
 </body>
 </html>

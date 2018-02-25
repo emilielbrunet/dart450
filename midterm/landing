@@ -29,33 +29,7 @@ This is my midterm assignment
 
 </head>
 
-<!-- Comment about the body of the HTML -->
-
-<body>
-
-  <nav>
-    <a class="menu" href="boxes2.html">Memory Game</a>
-    <a class="menu" href="bugs.html">Squish Bugs</a>
-    <a class="menu"href="madlib.html">Story Generator</a>
-    <a class="menu" href="index.html">Pixel Draw</a>
-  </nav>
-
-  <hr>
-
-	<h1>Scrap Paper</h1>
-
-
-<!-- <div id="palette" style="margin-left: 40px;">
-      <div class="pen" style="background-color:white;" onclick="setPenColour('white')"></div>
-      <div class="pen" style="background-color:black;" onclick="setPenColour('black')"></div>
-      <div class="pen" style="background-color:#9B9B9B;" onclick="setPenColour('#9B9B9B')"></div>
-      <div class="pen" style="background-color:#F9CF00;" onclick="setPenColour('#F9CF00')"></div>
-      <div class="pen" style="background-color:#F09E56;" onclick="setPenColour('#F09E56')"></div>
-      <div class="pen" style="background-color:#2264F2;" onclick="setPenColour('#2264F2')"></div>
-</div> -->
-<h2>Draw with pixels!</h2>
-<div id="artboard2"></div>
-
+<h1>Scrap Paper</h1>
 
 </body>
 </html>

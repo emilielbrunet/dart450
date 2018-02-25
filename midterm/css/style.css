@@ -25,14 +25,13 @@ h1{
 	display: inline-block;
   width: 280px;
   margin-top: -8px;
-  background-color: rgba(255, 255, 255, 1);
 }
 
 h2{
   color: black;
   font-size: 1.5em;
   font-family: indie flower;
-	padding-left: 0px;
+	padding-left: 10px;
 	margin-top: -35px;
   width: 280px;
   line-height: 40px;
@@ -80,19 +79,76 @@ hr {
   background-color: #F09E56;
 }
 
+/* Landing */
+
+#landinganim {
+  margin-top: 34vh;
+  text-align: center;
+  color: #2264F2;
+  font-size: 3.5em;
+  padding-left: 40px;
+  font-family: Rock Salt;
+  margin-right: 20px;
+}
+
+h3 {
+  color: black;
+  font-size: 1.5em;
+  font-family: indie flower;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.buglan {
+  width: 70px;
+}
+
+#beetlelan {
+  margin-top: 15px;
+  display: block;
+  -webkit-animation-name: move1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: move1;
+  animation-duration: 20s;
+  animation-iteration-count: 100;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes move1 {
+    from {margin-left:0vw;}
+    to {margin-left:100vw;}
+}
+
+@keyframes move1 {
+    from {margin-left:0vw;}
+    to {margin-left:100vw;}
+}
+
+#ladylan {
+  position:absolute;
+  margin-top: 50px;
+  -webkit-animation-name: move1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 40s; /* Safari 4.0 - 8.0 */
+  animation-name: move1;
+  animation-duration: 40s;
+  animation-iteration-count: 100;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes move1 {
+    from {margin-left:0vw;}
+    to {margin-left:100vw;}
+}
+
+@keyframes move1 {
+    from {margin-left:0vw;}
+    to {margin-left:100vw;}
+}
+
 /* Pixel Art */
 
 .black {
-  background-color: black;
-}
-
-.pen {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
-  cursor: pointer;
-  margin-top: 30px;
+  background-color: #F09E56;
 }
 
 #pixel2 {
@@ -108,13 +164,18 @@ hr {
   border-spacing: 1px;
   background-color: black;
   border: 1px solid black;
-  margin-left: 40px;
-  margin-top: 10px;
-  width: 1025px;
-  margin-bottom: 40px;
+  width: 800px;
+  height: 512px;
+  margin:auto;
 }
 
 /* Madlib */
+
+#prestory {
+margin: auto;
+width: 307px;
+height: 375px;
+}
 
 #madlib {
   margin-left: 40px;
@@ -136,21 +197,22 @@ hr {
 	display: inline-block;
 	height: 35px;
   line-height: 35px;
-	background-color: #2264F2;
-	border: none;
+	background-color: #F09E56;
+  border: solid 2px black;
 	width: 100px;
-	color: white;
+	color: black;
   font-size: 1.25em;
 	text-align: center;
 	cursor: pointer;
   position: absolute;
   margin-top: 320px;
+  line-height: 39px;
   	font-family: indie flower;
 }
 
 .inputBar {
 	width: 300px;
-	border: solid 2px rgba(58,58,58,1.00);
+	border: solid 2px black;
   margin-top: 5px;
 }
 
@@ -175,89 +237,32 @@ hr {
 
 /* Boxes */
 
-#boxes {
-    margin-top: 50px;
-	 display: flex;
-  flex-wrap: wrap;
-  width: 1025px;
-  margin-left: 40px;
-  background-color: black;
-    border: 1px solid black;
+div#memory_board{
+	background:none;
+	border:none;
+	width:780px;
+	height:500px;
+	padding:24px;
+	margin:0px auto;
 }
-
-.box {
-  width: 203px;
-	height: 161px;
-	display: inline-block;
-	position: relative;
-  margin: 1px;
-}
-
-#box1 {
+div#memory_board > div{
 	background-color: #F09E56;
-}
-
-#box2 {
-	background-color: #2264F2;
-}
-
-#box3 {
-	background-color: #F9CF00;
-}
-
-#box4 {
-	background-color: #9B9B9B;
-}
-
-#box5 {
-	background-color: #F09E56;
-}
-
-#box6 {
-	background-color: #F9CF00;
-}
-
-#box7 {
-	background-color: #9B9B9B;
-}
-
-#box8 {
-	background-color: #F09E56;
-}
-
-#box9 {
-	background-color: #2264F2;
-}
-
-#box10 {
-	background-color: #F9CF00;
-}
-
-#box11 {
-	background-color: #9B9B9B;
-}
-
-#box12 {
-	background-color: #2264F2;
-}
-
-#box13 {
-	background-color: #F9CF00;
-}
-
-#box14 {
-	background-color: #F09E56;
-}
-
-#box15 {
-	background-color: #9B9B9B;
+	border:#000 2px solid;
+	width:80px;
+	height:80px;
+	float:left;
+	margin:3px;
+	padding:20px;
+	font-size:38px;
+	cursor:pointer;
+	line-height: 80px;
+	text-align:center;
+	font-family: Rock Salt, sans-serif;
+	color: black;
 }
 
 /* Bug */
 
-#bugland {
-     cursor: url(../images/boot.cur.png)pointer;
-}
 
 .bug {
   margin-top: 5px;
