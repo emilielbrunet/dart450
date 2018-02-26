@@ -79,72 +79,6 @@ hr {
   background-color: #F09E56;
 }
 
-/* Landing */
-
-#landinganim {
-  margin-top: 34vh;
-  text-align: center;
-  color: #2264F2;
-  font-size: 3.5em;
-  padding-left: 40px;
-  font-family: Rock Salt;
-  margin-right: 20px;
-}
-
-h3 {
-  color: black;
-  font-size: 1.5em;
-  font-family: indie flower;
-  margin-top: 0px;
-  text-align: center;
-}
-
-.buglan {
-  width: 70px;
-}
-
-#beetlelan {
-  margin-top: 15px;
-  display: block;
-  -webkit-animation-name: move1; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
-  animation-name: move1;
-  animation-duration: 20s;
-  animation-iteration-count: 100;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes move1 {
-    from {margin-left:0vw;}
-    to {margin-left:100vw;}
-}
-
-@keyframes move1 {
-    from {margin-left:0vw;}
-    to {margin-left:100vw;}
-}
-
-#ladylan {
-  position:absolute;
-  margin-top: 50px;
-  -webkit-animation-name: move1; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 40s; /* Safari 4.0 - 8.0 */
-  animation-name: move1;
-  animation-duration: 40s;
-  animation-iteration-count: 100;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes move1 {
-    from {margin-left:0vw;}
-    to {margin-left:100vw;}
-}
-
-@keyframes move1 {
-    from {margin-left:0vw;}
-    to {margin-left:100vw;}
-}
-
 /* Pixel Art */
 
 .black {
@@ -206,7 +140,6 @@ height: 375px;
 	cursor: pointer;
   position: absolute;
   margin-top: 320px;
-  line-height: 39px;
   	font-family: indie flower;
 }
 
