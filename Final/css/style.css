@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	background-color:#FFFFFF;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+
+#menu {
+	text-align: center;
+	padding: 10px;
+	 top: 0;
+    z-index: 100;
+  position: absolute;
+    width: 100vw;
+	background: black;
+}
+
+menu, a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-family: 'Asap Condensed', sans-serif;
+	padding: 15px;
+}
+
+a:hover {
+	color: #00CB5F;
+}
+
+a:active {
+	color: #00CB5F;
+}
+
+#arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid black;
+	margin-left: 48vw;
+	margin-top: 40px;
+	  position: fixed;
+}
+
+#nonav {
+	position: fixed;
+	top: -42px;
+}
+
+/* Header */
+
+#head {
+	margin-bottom:0;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	box-sizing: border-box;
+	width: 100%;
+	background: #F93465;
+}
+
+h1 {
+height:100px;
+width: 390px;
+	margin: auto;
+	background-image: url(../design/Artboards/smush_deskopArtboard_4.png);
+	background-size: cover;
+	background-position: center;
+}
+
+h2 {
+font-family: 'Asap Condensed', sans-serif;
+	margin-top: 10px;
+	font-size: 14px;
+	letter-spacing: 10px;
+	text-align: center;
+	color: white;
+}
+
+h3 {
+font-family: 'Asap Condensed', sans-serif;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+h4 {
+font-family: 'Asap Condensed', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 50px;
+	color: grey;
+	display: block;
+	width: 75vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+p {
+font-family: 'Asap Condensed', sans-serif;
+	font-size: 16px;
+	line-height: 2vw;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
+
+hr {
+	width:  150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border: solid 0.75px #00CB5F;
+	margin-bottom: 20px;
+}
+
+/* Fly and Mouth */
+
+#flyp {
+	width: 200px;
+	height: 130px;
+	background-image: url(../images/smush_logo.png);
+	background-size: cover;
+	margin-top: 44px;
+	margin-left: 0px;
+
+}
+
+#p2 {
+	font-size: 38px;
+	font-family: 'Baloo Bhaina', cursive;
+	font-style: italic;
+	color: white;
+	text-align: center;
+}
+
+#p3 {
+	color: black;
+	font-size: 19px;
+}
+
+#prompt1 {
+	position: absolute;
+	bottom: 80px;
+	left:14vw;
+}
+
+#inMouth {
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+	position: absolute;
+	top: 165px;
+	left: 150px;
+	background: black
+}
+
+#mouth {
+	position: relative;
+	margin: auto;
+	padding-top: 80px;
+	width: 500px;
+	height: 350px;
+	background-image: url(../images/mouth_open.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#flybod {
+	background: #7875FF;
+	margin-top: -45px;
+	height: 106vh;
+}
+
+#mouthHolder {
+	width: 800px;
+	height: 400px;
+	margin:auto;
+	top: 14vh;
+}

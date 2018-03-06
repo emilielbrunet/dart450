@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- ************************************************************************
+
+DART 450, Winter 2018
+SMUSH
+Émilie Brunet
+
+Final Website
+
+This website is a comment on how we can feel things on the web (both emotionally and physically).
+It is intended to make the user feel uncomfortable yet intrigued.
+I am using code to create an experience where the user has to go through a variety of tasks
+that require them to do something somewhat uncomfortable. This UX is juxtaposed with a highly
+colourful, glossy, clean UI and vivid imagery that somehow makes the actions, while uncomfortable,
+somehow still desirable and satisfying.
+
+*********
+
+The HTML is used here to home the divs and text that will later be made interesting and interactive with
+the CSS and JS code.
+
+
+************************************************************************ -->
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<title>SMUSH</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Asap+Condensed|Baloo+Bhaina|Berkshire+Swash|Bowlby+One+SC|Coiny|Fredoka+One|Oleo+Script|Prompt|Rammetto+One|Salsa" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</script>
+<script src="js/script.js"></script>
+
+<body id="flybod">
+
+<section id="flyhead">
+	<div id="flyp"></div>
+
+
+<audio id="audio1" loop autoplay>
+  <source id="flysound" src="sound/fly.wav" type="audio/mpeg">
+</audio>
+
+<audio id="audio2">
+  <source id="eatsound" src="sound/eating_1.mp3" type="audio/mpeg">
+</audio>
+
+</section>
+<div id="mouthHolder">
+<section id="mouth">
+	<div id="teeth"></div>
+	<br>
+</section>
+	<img id="fly" src="images/fly.png" width="100" height="70">
+</div>
+
+<section id="prompt1">
+	<p id="p2">Try a bite of this tasty critter.</p>
+	<p id="p3">[drag + drop to munch]</p>
+</section>
+
+</body>
+</head>
+</html>
