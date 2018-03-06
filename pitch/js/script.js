@@ -11,9 +11,9 @@ $(document).ready(function() {
 
 /**Top Navigation**/
 	
-	    $("#nonav").toggle(
-        function(){$(this).css({"top": "0px"});},
-        function(){$(this).css({"top": "-42px"});
+	    $("#arrow-down").toggle(
+        function(){$('#nonav').css({"top": "0px"});},
+        function(){$('#nonav').css({"top": "-42px"});
 		});
 	
 /**Demo**/
