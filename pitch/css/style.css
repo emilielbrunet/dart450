@@ -17,23 +17,23 @@ html, body {
     z-index: 100;
   position: absolute;
     width: 100vw;
-	background: #BFFCAD;
+	background: black;
 }
 
 menu, a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-size: 18px;
 	font-family: 'Asap Condensed', sans-serif;
 	padding: 15px;
 }
 
 a:hover {
-	color: #8C8AFF;
+	color: #00CB5F;
 }
 
 a:active {
-	color: #8C8AFF;
+	color: #00CB5F;
 }
 
 .arrow-down {
@@ -41,7 +41,7 @@ a:active {
   height: 0; 
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #BFFCAD;
+  border-top: 20px solid black;
 	margin-left: 48vw;
 	margin-top: 40px;
 	  position: fixed;
@@ -60,21 +60,21 @@ a:active {
 	padding-top: 30px;
 	box-sizing: border-box;
 	width: 100%;
-	background: pink;
+	background: #F93465;
 }
 
 h1 {
-font-family: 'Baloo Bhaina', cursive;
-	font-size: 108px;
-	text-align: center;
-	color: white;
-	margin-top: 15px;
-	margin-bottom: 0px;
-	line-height: 100px;
+height:100px;
+width: 390px;
+	margin: auto;
+	background-image: url(../design/Artboards/smush_deskopArtboard_4.png);
+	background-size: cover;
+	background-position: center;
 }
 
 h2 {
 font-family: 'Asap Condensed', sans-serif;
+	margin-top: 10px;
 	font-size: 14px;
 	letter-spacing: 10px;
 	text-align: center;
@@ -115,7 +115,7 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
-	border: solid 0.75px #8C8AFF;
+	border: solid 0.75px #00CB5F;
 	margin-bottom: 20px;
 }
 
@@ -144,7 +144,7 @@ hr {
 #mood3 {
 	width: 250px;
 	height: 250px;
-	background-color: #8C8AFF;
+	background-color: #7875FF;
 	padding: 20px;
 	margin: 5px;
 }
@@ -171,15 +171,15 @@ hr {
 #mood6 {
 	width: 250px;
 	height: 250px;
-	background-color: #FCC519;
+	background-color: #FF9500;
 	background-size: cover;
 	padding: 20px;
 	margin: 5px;
 	text-align: center;
-	line-height: 240px;
-	color: white;
+	line-height: 250px;
+	color: black;
 	font-family: 'Asap Condensed', sans-serif;
-	font-size: 50px;
+	font-size: 44px;
 	text-decoration: none;
 }
 
@@ -195,7 +195,7 @@ hr {
 #mood8 {
 	width: 250px;
 	height: 250px;
-	background-color: #FA5A6B;
+	background-color: #F93465;
 	background-size: cover;
 	padding: 20px;
 	margin: 5px;
@@ -223,11 +223,11 @@ hr {
 #mood11 {
 	width: 250px;
 	height: 250px;
-	background-color:rgba(51,51,51,1.00);
+	background-color: black;
 	text-align: center;
-	line-height: 240px;
+	line-height: 250px;
 	color: white;
-	font-family: 'Asap Condensed', sans-serif;
+	font-family: 'Baloo Bhaina', cursive;
 	font-size: 50px;
 	text-decoration: none;
 	background-position: center;
@@ -258,29 +258,32 @@ hr {
 /* Demo */
 
 #demop {
-	font-family: 'Baloo Bhaina', cursive;
-	font-size: 32px;
-	text-align: left;
-	color: black;
-	padding-top: 85px;
-	margin-left: 45px;
-	position: absolute;
+	width: 200px;
+	height: 130px;
+	background-image: url(../design/../design/Artboards/smush_deskopArtboard_5.png);
+	background-size: cover;
+	margin-top: 44px;
+	margin-left: 0px;
+	
 }
 
 #demop2 {
-	font-size: 26px;
+	font-size: 38px;
+	font-family: 'Baloo Bhaina', cursive;
+	font-style: italic;
 	color: white;
 	text-align: center;
 }
 
 #demop3 {
-	color: #BFFCAD;
+	color: black;
+	font-size: 19px;
 }
 
 #prompt1 {
 	position: absolute;
 	bottom: 80px;
-	left:11vw;
+	left:14vw;
 }
 
 #div1 {
@@ -304,7 +307,7 @@ hr {
 }
 
 #demobod {
-	background: #8C8AFF;
+	background: #7875FF;
 	margin-top: -45px;
 	height: 106vh;
 }
@@ -320,21 +323,51 @@ hr {
 /* Mockups */
 
 .mock {
-	margin-left: 20px auto;
-	margin-right: 20px auto;
-	display: inline-flex;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 2%;
-	width: 100vw;;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	width: 70vw;;
 }
 
 #mock1 {
-	width: 400px;
-	height: 200px;
+	width: 900px;
+	height: 500px;
 	background-position: center;
-	background-image: url();
+	background-image: url(../design/mockups_all.png);
 	background-size: cover;
-	padding: 20px;
-	margin: 5px;
+	margin: auto;
+}
+
+#mock2 {
+	width: 246px;
+	height: 444px;
+	background-position: center;
+	background-image: url(../design/mockup_view1.png);
+	background-size: cover;
+	margin: auto;
+	display: inline-block;
+}
+
+#mock3 {
+	width: 246px;
+	height: 444px;
+	background-position: center;
+	background-image: url(../design/mockup_view2.png);
+	background-size: cover;
+	margin: auto;
+	display: inline-block;
+}
+
+#mock4 {
+	width: 246px;
+	height: 444px;
+	background-position: center;
+	background-image: url(../design/mockup_view3.png);
+	background-size: cover;
+	margin: auto;
+	display: inline-block;
 }
