@@ -10,46 +10,13 @@ html, body {
 	max-width: 100%;
 }
 
-#menu {
-	text-align: center;
-	padding: 10px;
-	 top: 0;
-    z-index: 100;
-  position: absolute;
-    width: 100vw;
-	background: black;
-}
-
-menu, a {
-	text-decoration: none;
-	color: white;
-	font-size: 18px;
-	font-family: 'Asap Condensed', sans-serif;
-	padding: 15px;
-}
-
-a:hover {
-	color: #00CB5F;
-}
-
-a:active {
-	color: #00CB5F;
-}
-
-#arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid black;
-	margin-left: 48vw;
-	margin-top: 40px;
-	  position: fixed;
-}
-
-#nonav {
-	position: fixed;
-	top: -42px;
+#logo{
+	width: 200px;
+	height: 130px;
+	background-image: url(../images/smush_logo.png);
+	background-size: cover;
+	margin-top: 44px;
+	margin-left: 0px;
 }
 
 /* Header */
@@ -119,18 +86,6 @@ hr {
 	margin-bottom: 20px;
 }
 
-/* Fly and Mouth */
-
-#flyp {
-	width: 200px;
-	height: 130px;
-	background-image: url(../images/smush_logo.png);
-	background-size: cover;
-	margin-top: 44px;
-	margin-left: 0px;
-
-}
-
 #p2 {
 	font-size: 38px;
 	font-family: 'Baloo Bhaina', cursive;
@@ -145,10 +100,13 @@ hr {
 }
 
 #prompt1 {
-	position: absolute;
-	bottom: 80px;
-	left:14vw;
+	position: relative;
+	margin-top: 24vh;
+	margin-left:auto;
+	margin-right:auto;
 }
+
+/* Fly and Mouth */
 
 #teeth {
     width: 150px;
@@ -190,4 +148,44 @@ hr {
 	height: 70px;
 	background: none;
 	border: none;
+}
+
+
+/* Bear and Zone */
+
+
+#zone {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+	border-radius: 50%;
+	margin: auto;
+	background: none;
+	border: dashed black 3px;
+}
+
+#bearbod {
+	background: #00CB5F;
+	margin-top: -45px;
+	height: 106vh;
+}
+
+#bear {
+	width: 100px;
+	height: 160px;
+	background: none;
+	border: none;
+	position: absolute;
+	top: 35px;
+	left: 60px;
+}
+
+#comfortZone {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6vh;
+	width: 200px;
+	height: 200px;
+	box-sizing: border-box;
+	position: relative;
 }

@@ -7,13 +7,6 @@ SMUSH
 
 Final Website
 
-This website is a comment on how we can feel things on the web (both emotionally and physically).
-It is intended to make the user feel uncomfortable yet intrigued.
-I am using code to create an experience where the user has to go through a variety of tasks
-that require them to do something somewhat uncomfortable. This UX is juxtaposed with a highly
-colourful, glossy, clean UI and vivid imagery that somehow makes the actions, while uncomfortable,
-somehow still desirable and satisfying.
-
 *********
 
 The HTML is used here to home the divs and text that will later be made interesting and interactive with
@@ -38,24 +31,35 @@ the CSS and JS code.
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/script.js"></script>
 
-<body id="flybod">
+<body id="bearbod">
 
 	<div id="logo"></div>
 
+<audio id="audio3">
+  <source id="bearScream" src="sound/female_breathing.wav" type="audio/mpeg">
+</audio>
+
+<section id="comfortZone">
+	<div id="zone" class="ui-widget-header" ondrop="playAudio()"></div>
+	<img id="bear" src="images/bear.png" class="ui-widget-content">
 </section>
-<div id="mouthHolder">
-<section id="mouth">
-	<div id="teeth" class="ui-widget-header"></div>
-	<br>
-</section>
-	<img id="fly" src="images/fly.png" class="ui-widget-content">
-</div>
 
 <section id="prompt1">
-	<p id="p2">Try a bite of this tasty critter.</p>
-	<p id="p3">[drag + drop to munch]</p>
+	<p id="p2">Time to exit your comfort zone</p>
+	<p id="p3">[drag + drop to start]</p>
 </section>
 
 </body>
 </head>
 </html>
+
+<script>
+//Set Sound effect variables (fly buzzing and eating sound)
+	var w = document.getElementById("audio3");
+
+//When the image is dropped into the div, stop playing the autoplay audio
+//Start playing the new audio
+function playAudio() {
+    w.play();
+}
+</script>
