@@ -12,7 +12,8 @@ $(document).ready(function() {
 //DROP EVENT 1
 //
 //Make the fly draggable
-$('#fly').draggable();
+$("#fly").draggable();
+$('#widget').draggable();
 
 //Make the mouth a droppable target
 //When the fly is dragged into the mouth, make it stay there
@@ -29,7 +30,7 @@ var y = document.getElementById("audio1");
 //Start playing the new audio
 function dropped(){
 	console.log("tada!");
-	$('#mouth').attr('src','images/mouth_closed.png')
+	$('#mouth').attr('src','images/mouth_closed.png');
 	$('#fly').remove();
 	x.play();
 	y.pause();
