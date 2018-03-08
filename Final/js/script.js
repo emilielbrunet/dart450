@@ -11,29 +11,27 @@ $(document).ready(function() {
 
 //DROP EVENT 1
 //
+	
 //Make the fly draggable
-$("#fly").draggable();
-$('#widget').draggable();
-
+	  $( function() {
+    $( "#fly" ).draggable();
+		  
+//Make the fly draggable with touch screen'
+	$("#widget").draggable();
+		  
 //Make the mouth a droppable target
-//When the fly is dragged into the mouth, make it stay there
-$('#teeth').droppable({
-	drop: dropped
-});
-
-//Set aound effect variables (fly buzzing and eating sound)
-var x = document.getElementById("audio2");
-var y = document.getElementById("audio1");
-
 //When the fly gets dropped, make the mouth close and remove the fly
+    $( "#teeth" ).droppable({
+      drop: function( event, ui ) {
+          $('#mouth').css('background-image','url(images/mouth_closed.png)');
+		  		$('#fly').remove();
+      }
+    });
+  } );
+	
+	
+//Set Sound effect variables (fly buzzing and eating sound)
 //When the image is dropped into the div, stop playing the autoplay audio
 //Start playing the new audio
-function dropped(){
-	console.log("tada!");
-	$('#mouth').attr('src','images/mouth_closed.png');
-	$('#fly').remove();
-	x.play();
-	y.pause();
-}
 
 });

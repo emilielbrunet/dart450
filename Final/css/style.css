@@ -150,14 +150,15 @@ hr {
 	left:14vw;
 }
 
-#inMouth {
+#teeth {
     width: 150px;
     height: 80px;
     padding: 10px;
 	position: absolute;
 	top: 165px;
 	left: 150px;
-	background: black
+	background: none;
+	border: none;
 }
 
 #mouth {
@@ -182,4 +183,11 @@ hr {
 	height: 400px;
 	margin:auto;
 	top: 14vh;
+}
+
+#fly {
+	width: 100px;
+	height: 70px;
+	background: none;
+	border: none;
 }

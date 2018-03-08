@@ -26,15 +26,15 @@ the CSS and JS code.
 <head>
 
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>SMUSH</title>
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Asap+Condensed|Baloo+Bhaina|Berkshire+Swash|Bowlby+One+SC|Coiny|Fredoka+One|Oleo+Script|Prompt|Rammetto+One|Salsa" rel="stylesheet">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/script.js"></script>
 
@@ -55,10 +55,10 @@ the CSS and JS code.
 </section>
 <div id="mouthHolder">
 <section id="mouth">
-	<div id="teeth"></div>
+	<div id="teeth" class="ui-widget-header"></div>
 	<br>
 </section>
-	<img id="fly" src="images/fly.png" width="100" height="70">
+	<img id="fly" src="images/fly.png" class="ui-widget-content">
 </div>
 
 <section id="prompt1">
