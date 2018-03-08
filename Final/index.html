@@ -55,7 +55,7 @@ the CSS and JS code.
 </section>
 <div id="mouthHolder">
 <section id="mouth">
-	<div id="teeth" class="ui-widget-header"></div>
+	<div id="teeth" class="ui-widget-header" ondrop="playAudio()"></div>
 	<br>
 </section>
 	<img id="fly" src="images/fly.png" class="ui-widget-content">
@@ -69,3 +69,16 @@ the CSS and JS code.
 </body>
 </head>
 </html>
+
+<script>
+//Set Sound effect variables (fly buzzing and eating sound)
+	var x = document.getElementById("audio2"); 
+	var y = document.getElementById("audio1"); 
+	
+//When the image is dropped into the div, stop playing the autoplay audio
+//Start playing the new audio
+function playAudio() { 
+    x.play(); 
+	y.pause();
+} 
+</script>

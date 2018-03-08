@@ -16,11 +16,11 @@ $(document).ready(function() {
 	  $( function() {
     $( "#fly" ).draggable();
 		  
-//Make the fly draggable with touch screen'
+//Make the fly draggable with touch screen (plugin from http://touchpunch.furf.com/)
 	$("#widget").draggable();
 		  
 //Make the mouth a droppable target
-//When the fly gets dropped, make the mouth close and remove the fly
+//When the fly gets dropped, make the mouth close and remove the fly (funciton from https://jqueryui.com/droppable/)
     $( "#teeth" ).droppable({
       drop: function( event, ui ) {
           $('#mouth').css('background-image','url(images/mouth_closed.png)');
@@ -28,10 +28,5 @@ $(document).ready(function() {
       }
     });
   } );
-	
-	
-//Set Sound effect variables (fly buzzing and eating sound)
-//When the image is dropped into the div, stop playing the autoplay audio
-//Start playing the new audio
 
 });
