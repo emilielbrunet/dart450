@@ -1,0 +1,28 @@
+/*
+DART 450, Winter 2018
+Exercise 7
+Émilie Brunet
+Prototype for final project using scroll!
+*/
+
+body {
+  height: 1500px;
+}
+
+div {
+  position: absolute;
+  width: 30px;
+  height: 150px;
+  top: 57vh;
+  left: 45.5vw;
+  background-color: green;
+  transition-duration: 3s;
+}
+
+#nose {
+  position: absolute;
+  top: 5vh;
+  left: 40vw;
+  height: 450px;
+  z-index: -99;
+}
