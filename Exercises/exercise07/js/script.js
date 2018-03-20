@@ -3,9 +3,13 @@ DART 450, Winter 2018
 Exercise 7
 Émilie Brunet
 Prototype for final project using scroll!
+
 Libraries:
 Waypoints
 http://imakewebthings.com/waypoints
+
+jQuery Easing Plugin
+http://gsgd.co.uk/sandbox/jquery/easing/
 **********************************************/
 
 $(document).ready(function () {
@@ -15,7 +19,7 @@ $(document).ready(function () {
   // 'offset' is how far from the top of the page the element has to be to trigger it
   $('#trigger').waypoint({
     handler: handleTrigger,
-    offset: '40%'
+    offset: '50%'
   });
 });
 
@@ -29,12 +33,16 @@ function handleTrigger(direction) {
   // We can use that to react differently
   if (direction == 'up') {
     $('#trigger').animate({
-      height: '5px'
+      minHeight: '0px',
+      minWidth: '30px',
+      opacity: '0'
     });
   }
   else {
     $('#trigger').animate({
-      height: '500px'
+      minHeight: '300px',
+      minWidth: '30px',
+      opacity: '100',
     });
   }
 }
