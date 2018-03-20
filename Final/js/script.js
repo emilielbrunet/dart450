@@ -9,50 +9,40 @@ Plugin for mobile touch drag and drop http://touchpunch.furf.com/)
 **********************************************/
 
 
+var flySound;
+var eatSound;
+
 $(document).ready(function() {
 
 //DROP EVENT 1
 //
 //Set Sound effect variables (fly buzzing and eating sound)
-var flySound = new Audio('sound/fly.wav')
-var eatSound = new Audio('sound/eating_1.mp3')
+flySound = new Audio('sound/fly.wav')
+eatSound = new Audio('sound/eating_1.mp3')
 
 //Autoplay fly sound on page load
 flySound.play();
 
 //Make the fly draggable
-	  $( function() {
     $( "#fly" ).draggable();
 
 //Make the mouth a droppable target
-//When the image is dropped into the div, stop playing the autoplay audio
-//Start playing the new audio
-//When the fly gets dropped, make the mouth close and remove the fly (function from https://jqueryui.com/droppable/)
+//Add an event handler function for 'drop' called flyDrop
     $( "#teeth" ).droppable({
-      drop: function( event, ui ) {
-          $('#mouth').css('background-image','url(images/mouth_closed.png)');
-		  		$('#fly').remove();
-					eatSound.play();
-					flySound.pause();
-      }
-    });
-  } );
-
-//DROP EVENT 2
+      drop: flyDrop
+		});
+// flyDrop
 //
-//Make the bear draggable
-	  $( function() {
-    $( "#bear" ).draggable();
 
-//Make the fly draggable with touch screen (plugin from http://touchpunch.furf.com/)
-	$("#widget").draggable();
+  });
 
-//Make the mouth a droppable target
-//When the fly gets dropped, make the mouth close and remove the fly (function from https://jqueryui.com/droppable/)
-    $( "#zone" ).droppable({
-      drop: function( event, ui ) {
-      }
-    });
-  } );
-
-});
+	function flyDrop(event, ui) {
+// Make the mouth close
+			$('#mouth').css('background-image','url(images/mouth_closed.png)');
+//Remove the fly
+			$('#fly').remove();
+//Start playing the new audio
+			eatSound.play();
+//Stop playing the autoplay audio
+			flySound.pause();
+}

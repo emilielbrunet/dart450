@@ -77,15 +77,6 @@ font-family: 'Asap Condensed', sans-serif;
 	margin-right: 15vw;
 }
 
-hr {
-	width:  150px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	border: solid 0.75px #00CB5F;
-	margin-bottom: 20px;
-}
-
 #p2 {
 	font-size: 38px;
 	font-family: 'Baloo Bhaina', cursive;
@@ -100,8 +91,15 @@ hr {
 }
 
 #prompt1 {
+	position: absolute;
+	text-align: center;
+	bottom: 13vh;
+	left: 15%;
+}
+
+#prompt2 {
 	position: relative;
-	margin-top: 24vh;
+	margin-top: 10vh;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -159,9 +157,57 @@ hr {
   height: 200px;
   padding: 10px;
 	border-radius: 50%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	background: none;
 	border: dashed black 3px;
+}
+
+#zone1 {
+	width: 60vw;
+  height: 120px;
+  padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -320px;
+	background: none;
+	border: none;
+		position: relative;
+}
+
+#zone2 {
+	width: 25vw;
+	height: 210px;
+	margin-left: 18vw;
+	margin-right: auto;
+	margin-top: 0px;
+	background: none;
+	display: inline-block;
+	border: none;
+		position: relative;
+}
+
+#zone3 {
+	width: 25vw;
+	height: 210px;
+	margin-left: 16vw;
+	margin-right: auto;
+	margin-top: 0px;
+	background: none;
+	display: inline-block;
+	border: none;
+		position: relative;
+}
+
+#zone4 {
+  width: 60vw;
+  height: 150px;
+  padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background: none;
+	border: none;
+	position: relative;
 }
 
 #bearbod {
