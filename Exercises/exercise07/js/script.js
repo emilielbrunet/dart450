@@ -14,23 +14,23 @@ http://gsgd.co.uk/sandbox/jquery/easing/
 
 $(document).ready(function () {
 
-  // Create a waypoint associated with our trigger div
-  // 'handler' is the function to call when we scroll to the element
-  // 'offset' is how far from the top of the page the element has to be to trigger it
+  // Create a waypoint associated with #trigger
+  // Set function name to 'handler' (called when we scroll to the element)
+  // Set the 'offset' to 50% between the trigger and the top of the page
   $('#trigger').waypoint({
     handler: handleTrigger,
     offset: '50%'
   });
 });
 
+jQuery.easing.def = "string";
+
 // handleTrigger
 //
-// If we're scrolling down to the element it turns yellow,
-// if we're scrolling up to the element it turns green
+// If we're scrolling down to the element it gets taller,
+// if we're scrolling up to the element it gets smaller and disapears
 function handleTrigger(direction) {
-  // When waypoints calls our handler function it tells it
-  // the 'direction' the user was scrolling in to get there
-  // We can use that to react differently
+
   if (direction == 'up') {
     $('#trigger').animate({
       minHeight: '0px',
@@ -46,8 +46,3 @@ function handleTrigger(direction) {
     });
   }
 }
-
-function pageScroll() {
-    window.scrollBy(0, 200);
-}
-window.onload = pageScroll;
