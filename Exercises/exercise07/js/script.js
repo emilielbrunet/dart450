@@ -11,6 +11,7 @@ http://imakewebthings.com/waypoints
 jQuery Easing Plugin
 http://gsgd.co.uk/sandbox/jquery/easing/
 **********************************************/
+jQuery.easing.def = "string";
 
 $(document).ready(function () {
 
@@ -22,8 +23,6 @@ $(document).ready(function () {
     offset: '50%'
   });
 });
-
-jQuery.easing.def = "string";
 
 // handleTrigger
 //
