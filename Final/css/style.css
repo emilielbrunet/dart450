@@ -30,43 +30,6 @@ html, body {
 	background: #F93465;
 }
 
-h1 {
-height:100px;
-width: 390px;
-	margin: auto;
-	background-image: url(../design/Artboards/smush_deskopArtboard_4.png);
-	background-size: cover;
-	background-position: center;
-}
-
-h2 {
-font-family: 'Asap Condensed', sans-serif;
-	margin-top: 10px;
-	font-size: 14px;
-	letter-spacing: 10px;
-	text-align: center;
-	color: white;
-}
-
-h3 {
-font-family: 'Asap Condensed', sans-serif;
-	font-size: 24px;
-	text-align: center;
-	margin-top: 50px;
-}
-
-h4 {
-font-family: 'Asap Condensed', sans-serif;
-	font-size: 20px;
-	text-align: center;
-	margin-top: 50px;
-	color: grey;
-	display: block;
-	width: 75vw;
-	margin-right: auto;
-	margin-left: auto;
-}
-
 p {
 font-family: 'Asap Condensed', sans-serif;
 	font-size: 16px;
@@ -95,13 +58,6 @@ font-family: 'Asap Condensed', sans-serif;
 	text-align: center;
 	bottom: 13vh;
 	left: 15%;
-}
-
-#prompt2 {
-	position: relative;
-	margin-top: 10vh;
-	margin-left:auto;
-	margin-right:auto;
 }
 
 /* Fly and Mouth */
