@@ -47,7 +47,7 @@ font-family: 'Asap Condensed', sans-serif;
 #prompt1 {
 	position: absolute;
 	text-align: center;
-	bottom: 13vh;
+	bottom: 10vh;
 	left: 15%;
 }
 
@@ -60,9 +60,16 @@ font-family: 'Asap Condensed', sans-serif;
 #balloon {
 	width: 200px;
 	height: 420px;
-	display: block;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
+	position: absolute;
+	left: 43vw;
 	opacity: 0.95;
+	-webkit-animation: balloonFloat 5s infinite; /* Safari 4.0 - 8.0 */
+animation: balloonFloat 5s infinite;
+
+@-webkit-keyframes balloonFloat{
+	from {top: 10%;}
+	50% {display: none;}
+	99% {display: none;}
+	to {top: 10%;}
+}
 }
