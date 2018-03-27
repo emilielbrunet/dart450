@@ -17,7 +17,7 @@ $(document).ready(function() {
 //DROP EVENT 1
 //
 //Set Sound effect variables (fly buzzing and eating sound)
-flySound = new Audio('sound/fly.wav')
+flySound = new Audio('sound/fly.wav');
 eatSound = new Audio('sound/eating_1.mp3');
 
 //Autoplay fly sound on page load

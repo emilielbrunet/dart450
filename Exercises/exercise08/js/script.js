@@ -22,6 +22,9 @@ var microphone;
 var popSound;
 
 $(document).ready(function() {
+// SOUND
+//Set Sound effect variables (popping sound)
+popSound = new Audio('sound/pop.wav');
 
 // PIPPIN'S SCRIPT TO MAKE THE MIC WORK
 // How often to check the current volume
@@ -97,14 +100,12 @@ function update () {
   // Make sure our volume meter actually exists
   //
   if (meter) {
-    if (meter.volume > 0.3) {
+    if (meter.volume > 0.4) {
 
       // Yell
       //
       // Set variable
       balloonPop();
-      //Set Sound effect variables (popping sound)
-      popSound = new Audio('sound/pop.flac');
 
       // Call the function to make the balloon pop
       function balloonPop () {
