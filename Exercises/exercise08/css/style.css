@@ -63,13 +63,23 @@ font-family: 'Asap Condensed', sans-serif;
 	position: absolute;
 	left: 43vw;
 	opacity: 0.95;
-	-webkit-animation: balloonFloat 5s infinite; /* Safari 4.0 - 8.0 */
-animation: balloonFloat 5s infinite;
+	-webkit-animation: balloonFloat 2s infinite; /* Safari 4.0 - 8.0 */
+animation: balloonFloat 2s infinite;
 
 @-webkit-keyframes balloonFloat{
-	from {top: 10%;}
-	50% {display: none;}
-	99% {display: none;}
-	to {top: 10%;}
+	from {top: 10px;}
+	50% {top: 20px;}
+	to {top: 10px;}
+}
+}
+
+.pop {
+	-webkit-animation: balloonPop 1s infinite; /* Safari 4.0 - 8.0 */
+animation: balloonPop 1s infinite;
+
+@-webkit-keyframes balloonPop{
+	from {-webkit-transform: scale(1); opacity: 1; -webkit-animation-timing-function: ease-in-out;}
+	99% {-webkit-transform: scale(1.2); opacity: 0; -webkit-animation-timing-function: ease-in-out;}
+	to {-webkit-transform: scale(0.9); opacity: 0; -webkit-animation-timing-function: ease-in-out;}
 }
 }
