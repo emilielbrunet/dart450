@@ -30,5 +30,5 @@ bearSound = new Audio('sound/dog-toy.wav');
 			//play squeaky toy noise
 			bearSound.play();
 		//delay the function called pageLoad by 1.5 seconds
-			setTimeout(pageLoad,1500);
+			setTimeout(pageLoad,1000);
 			}
