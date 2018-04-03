@@ -16,11 +16,19 @@ bearSound = new Audio('sound/dog-toy.wav');
       drop: bearDrop
 		});
     });
+
 //bearDrop
 //
+//function to open next page with delay
+				function pageLoad() {
+					window.location.assign("fly.html");
+				}
 //Called when the user drops something onto the droppable element
-			function bearDrop(event, ui) {
+	function bearDrop(event, ui) {
 //Change background image of #bear div to scared bear image for dramatic effect
 			$('#bear').css('background-image','url(images/bear2.png)');
+			//play squeaky toy noise
 			bearSound.play();
-			};
+		//delay the function called pageLoad by 1.5 seconds
+			setTimeout(pageLoad,1500);
+			}
