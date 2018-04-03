@@ -104,6 +104,7 @@ font-family: 'Asap Condensed', sans-serif;
 	height: 70px;
 	background: none;
 	border: none;
+	cursor: pointer;
 }
 
 
@@ -175,11 +176,16 @@ font-family: 'Asap Condensed', sans-serif;
 #bear {
 	width: 100px;
 	height: 160px;
-	background: none;
+	background-image: url(../images/bear.png);
+	background-size: cover;
+	background-position: center;
+	background-color:rgba(0,0,0,0.00);
 	border: none;
 	position: absolute;
 	top: 35px;
 	left: 60px;
+	padding: 3px;
+	cursor: pointer;
 }
 
 #comfortZone {
