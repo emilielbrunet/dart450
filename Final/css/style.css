@@ -24,7 +24,7 @@ html, body {
 	height: 130px;
 	background-image: url(../images/smush_logo.png);
 	background-size: cover;
-	margin-top: 44px;
+	margin-top: 0px;
 	margin-left: 0px;
   position: fixed;
 }
@@ -47,6 +47,7 @@ font-family: 'Asap Condensed', sans-serif;
 	font-style: italic;
 	color: white;
 	text-align: center;
+	line-height: 40px;
 }
 
 #prompt1 {
@@ -236,23 +237,30 @@ animation: balloonFloat 3s infinite;
 
 
 #trigger {
-  position: fixed;
+  position: absolute;
   max-width: 1px;
   max-height: 1px;
   opacity: 0;
-  top: 57vh;
-  left: 45.5vw;
+  top: 365px;
+  left: 75px;
 }
 
 #nose {
-  position: fixed;
-  top: 5vh;
-  left: 40vw;
+  position:relative;
+	margin: auto;
   height: 450px;
-  z-index: -12;
+	z-index: -1;
 }
 
-#nosebod {
+#noseholder{
+	position: fixed;
+  top: 5vh;
+  left: 39vw;
+  height: 1500px;
+	width: 325px;
+}
+
+#nosebod, #nosehtml {
 	background: #F93465;
   height: 1500px;
 }

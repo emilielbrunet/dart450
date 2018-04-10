@@ -15,6 +15,12 @@ jQuery.easing.def = "string";
 
 $(document).ready(function () {
 
+  window.onload == function snotDrip(){
+      $('#trigger').css({
+        height: '300px'
+      });
+  };
+
   // Create a waypoint associated with #trigger
   // Set function name to 'handler' (called when we scroll to the element)
   // Set the 'offset' to 50% between the trigger and the top of the page
