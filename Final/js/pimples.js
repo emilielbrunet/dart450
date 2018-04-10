@@ -10,17 +10,12 @@ Library:
 //Name for our popping balloon sound file
 var popSound;
 
-$(document).ready(function() {
+//function to open next page with delay
+				function pageLoad() {
+					window.location.assign("nose.html");
+				}
 
-$("#zit1").delay(200);
-$("#zit2").delay(300);
-$("#zit3").delay(100);
-$("#zit4").delay(400);
-$("#zit5").delay(100);
-$("#zit6").delay(350);
-$("#zit7").delay(100);
-$("#zit8").delay(250);
-$("#zit9").delay(350);
+$(document).ready(function() {
 
 // SOUND
 //Set Sound effect variables (popping sound)
@@ -32,7 +27,11 @@ $('.pimple').on('mousedown',function() {
     distance: 1.5
   },750, function() {
     popSound.play();
-    $(this).hide
+    $(this).remove();
+    if ($('.pimple').length ==0) {
+    //delay the function called pageLoad by 1.5 seconds and then go to new page
+  			setTimeout(pageLoad,1000)
+    };
   });
 });
 

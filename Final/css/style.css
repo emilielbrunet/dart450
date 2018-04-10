@@ -274,7 +274,7 @@ animation: balloonFloat 3s infinite;
 
 .pimple {
 	border-radius: 50%;
-	background: radial-gradient(#FFD2C2 10%, #E38C76 70%);
+	background-image: radial-gradient(#FFD2C2 10%, #E38C76 70%);
 	cursor: pointer;
 }
 
@@ -349,17 +349,8 @@ animation: balloonFloat 3s infinite;
 }
 
 .burst {
-	-webkit-animation: burst 3s; /* Safari 4.0 - 8.0 */
-animation: burst 3s;
-}
+	background: url(images/splat3.png);
+	background-size: cover;
+	background-position: center;
 
-@-webkit-keyframes burst{
-	from {scale: 1.1; -webkit-animation-timing-function: ease-in-out;}
-	50% {scale: 1.3; -webkit-animation-timing-function: ease-in-out;}
-	to {scale: 2; -webkit-animation-timing-function: ease-in-out;}
-}
-@keyframes burst{
-	from {scale: 1.1; -webkit-animation-timing-function: ease-in-out;}
-	50% {scale: 1.3; -webkit-animation-timing-function: ease-in-out;}
-	to {scale: 2; -webkit-animation-timing-function: ease-in-out;}
 }

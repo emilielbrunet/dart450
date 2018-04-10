@@ -29,6 +29,6 @@ bearSound = new Audio('sound/dog-toy.wav');
 			$('#bear').css('background-image','url(images/bear2.png)');
 			//play squeaky toy noise
 			bearSound.play();
-		//delay the function called pageLoad by 1.5 seconds
+		//delay the function called pageLoad by 1.5 seconds and then go to new page
 			setTimeout(pageLoad,1000);
 			}
