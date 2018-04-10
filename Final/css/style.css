@@ -254,6 +254,28 @@ animation: balloonFloat 3s infinite;
 
 #nosebod {
 	background: #F93465;
-	margin-top: -45px;
   height: 1500px;
+}
+
+/*Pimples*/
+
+#pimpbod {
+	background: #F2B598;
+}
+
+.pimple {
+	border-radius: 50%;
+	background: radial-gradient(#FFD2C2 10%, #E38C76 70%);
+	width: 50px;
+	height: 50px;
+	margin: auto;
+}
+
+#p4 {
+	font-size: 38px;
+	font-family: 'Baloo Bhaina', cursive;
+	font-style: italic;
+	color: white;
+	text-align: center;
+	line-height: 40px;
 }
