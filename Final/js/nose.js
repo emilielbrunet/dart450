@@ -14,12 +14,20 @@ http://gsgd.co.uk/sandbox/jquery/easing/
 jQuery.easing.def = "string";
 
 $(document).ready(function () {
+//On page load start making snot drip by targeting height, width and opacity
+      $('#trigger').delay(500).animate({
+        minHeight: '400px',
+        minWidth: '30px',
+        opacity: '1'
+      },5000);
 
-  window.onload == function snotDrip(){
-      $('#trigger').css({
-        height: '300px'
-      });
-  };
+      $(document).animate({
+        scrollTop: '15000px'
+      },1);
+
+// setTimeout(function() {
+//   $(document).scrollTop(11000);
+// },1);
 
   // Create a waypoint associated with #trigger
   // Set function name to 'handler' (called when we scroll to the element)
@@ -36,18 +44,11 @@ $(document).ready(function () {
 // if we're scrolling up to the element it gets smaller and disapears
 function handleTrigger(direction) {
 
-  if (direction == 'up') {
+  if (direction == 'down') {
     $('#trigger').animate({
       minHeight: '0px',
       minWidth: '30px',
       opacity: '0'
-    });
-  }
-  else {
-    $('#trigger').animate({
-      minHeight: '300px',
-      minWidth: '30px',
-      opacity: '100',
     });
   }
 }

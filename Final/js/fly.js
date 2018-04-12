@@ -1,7 +1,7 @@
 /**********************************************
 
 DART 450, Winter 2018
-Exercise 4
+SMUSH
 Émilie Brunet
 
 Library:
@@ -11,6 +11,11 @@ Plugin for mobile touch drag and drop http://touchpunch.furf.com/)
 
 var flySound;
 var eatSound;
+
+//function to open next page with delay
+				function pageLoad() {
+					window.location.assign("balloon.html");
+				}
 
 $(document).ready(function() {
 
@@ -45,4 +50,6 @@ flySound.play();
 			eatSound.play();
 //Stop playing the autoplay audio
 			flySound.pause();
+//delay the function called pageLoad by 1.5 seconds and then go to new page
+      setTimeout(pageLoad,1000)
 }

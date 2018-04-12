@@ -21,6 +21,11 @@ var microphone;
 //Name for our popping balloon sound file
 var popSound;
 
+//function to open next page with delay
+				function pageLoad() {
+					window.location.assign("blue.html");
+				}
+
 $(document).ready(function() {
 // SOUND
 //Set Sound effect variables (popping sound)
@@ -114,6 +119,8 @@ function update () {
               $("#balloon").addClass("pop");
               //Start playing the popping sound
               			popSound.play();
+              //delay the function called pageLoad by 1.5 seconds and then go to new page
+                    setTimeout(pageLoad,1000)
       }
     }
   }
