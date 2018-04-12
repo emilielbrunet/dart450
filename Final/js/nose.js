@@ -16,14 +16,14 @@ jQuery.easing.def = "string";
 $(document).ready(function () {
 //On page load start making snot drip by targeting height, width and opacity
       $('#trigger').delay(500).animate({
-        minHeight: '400px',
-        minWidth: '30px',
+        minHeight: '350px',
+        minWidth: '35px',
         opacity: '1'
-      },5000);
+      },4000);
 
-      $(document).animate({
-        scrollTop: '15000px'
-      },1);
+      // $(document).animate({
+      //   scrollTop: '15000px'
+      // },1);
 
 // setTimeout(function() {
 //   $(document).scrollTop(11000);
