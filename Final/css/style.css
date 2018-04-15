@@ -364,8 +364,9 @@ animation: balloonFloat 3s infinite;
 
 /*End*/
 
-#endbod {
-	background-color: #FFE605;
+canvas {
+position: absolute;
+top: 0px;
 }
 
 #p5  {

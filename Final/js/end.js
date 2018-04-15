@@ -24,7 +24,4 @@ cheerSound = new Audio('sound/cheering.wav');
   var confetti = new ConfettiGenerator(confettiSettings);
   confetti.render();
 
-  {"target":"confetti-holder","max":"80","size":"1","animate":true,
-  "props":["circle","square","triangle","line"],
-  "colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],
-  "clock":"25","width":"1151","height":"780"}
+});
