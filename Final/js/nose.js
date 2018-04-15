@@ -1,20 +1,23 @@
 /**********************************************
 DART 450, Winter 2018
-Exercise 7
+SMUSH
 Émilie Brunet
-Prototype for final project using scroll!
+
+FINAL PROJECT
+Using scroll to make a nose snot drip and recede.
 
 Libraries:
-Waypoints
-http://imakewebthings.com/waypoints
 
-
-jQuery Easing Plugin
-http://gsgd.co.uk/sandbox/jquery/easing/
+jQuery Easing Plugin: http://gsgd.co.uk/sandbox/jquery/easing/
 **********************************************/
+
 jQuery.easing.def = "string";
 
 $(document).ready(function () {
+
+  // Set sound effect variables (bear sound)
+  snotSound = new Audio('sound/snotty-nose.wav');
+
   //On page load start making snot drip by targeting height, width and opacity
   $('#trigger').delay(500).animate({
     minHeight: '45vh',
@@ -31,10 +34,16 @@ $(document).ready(function () {
   $(document).on('scroll',handleScroll);
 });
 
+//function to open next page with delay
+				function pageLoad() {
+					window.location.assign("yellow.html");
+				}
 
 function handleScroll() {
   // If they scrolled back to the top of the page
   if ($(document).scrollTop() ===  0) {
+    // Play snot noise
+          snotSound.play();
     // Stop any current animation (like the snot going down)
     $('#trigger').stop();
     // Animate the snot back in
@@ -43,7 +52,7 @@ function handleScroll() {
       minWidth: '0px',
       opacity: '0'
     },500);
-    // Play a sound?
-    // Go to the next thing?
+    		//delay the function called pageLoad by 1.5 seconds and then go to new page
+    			setTimeout(pageLoad,1700);
   }
 }

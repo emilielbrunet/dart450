@@ -360,5 +360,20 @@ animation: balloonFloat 3s infinite;
 	background: url(images/splat3.png);
 	background-size: cover;
 	background-position: center;
+}
 
+/*End*/
+
+#endbod {
+	background-color: #FFE605;
+}
+
+#p5  {
+	font-size: 38px;
+	font-family: 'Baloo Bhaina', cursive;
+	color: black;
+	text-align: center;
+	line-height: 40px;
+	width: 70vw;
+	margin-top: 5vh;
 }
