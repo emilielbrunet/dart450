@@ -13,6 +13,8 @@ jQuery Easing Plugin: http://gsgd.co.uk/sandbox/jquery/easing/
 
 jQuery.easing.def = "string";
 
+var snotSound;
+
 $(document).ready(function () {
 
   // Set sound effect variables (bear sound)
@@ -36,7 +38,7 @@ $(document).ready(function () {
 
 //function to open next page with delay
 				function pageLoad() {
-					window.location.assign("yellow.html");
+					window.location.assign("end.html");
 				}
 
 function handleScroll() {
