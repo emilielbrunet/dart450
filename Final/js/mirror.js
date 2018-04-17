@@ -4,6 +4,7 @@
 // Borrowed code:
 // Access to webcam: https://codepen.io/syedmurtaza/pen/oeYMNm
 
+var gameOver = false;
 
 $(document).ready(function() {
 
@@ -17,4 +18,35 @@ $(document).ready(function() {
    video.play();
    });
   }
-});
+
+    if (annyang) {
+
+      var command = {
+        // check each word being said
+        // call the function specified with whichever word is said
+        ':word': userSaidAWord
+      };
+
+      // provide annyang with commands
+      annyang.addCommands(command);
+
+      // Annyang starts listening
+      annyang.start();
+    }
+  });
+
+  // when Annyang hears a word being said, it will appear in the following function
+  function userSaidAWord(word) {
+    // make sure the interaction is not over
+    if (gameOver) {
+      // stop reacting to words
+      return;
+    }
+    // check if the user said the right thing
+    if (word === 'I am terrible') {
+      // if the user said 'I am terrible'go to the next page
+      $('body').css({
+        backgroundColor: 'blue'
+      });
+    }
+  }
