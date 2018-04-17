@@ -43,7 +43,7 @@ font-family: 'Asap Condensed', sans-serif;
 
 #p2 {
 	font-size: 38px;
-	font-family: 'Baloo Bhaina', cursive;
+	font-family: 'Baloo Bhaina', Helvetica, sans-serif;
 	font-style: italic;
 	color: white;
 	text-align: center;
@@ -54,7 +54,7 @@ font-family: 'Asap Condensed', sans-serif;
 	position: absolute;
 	text-align: center;
 	bottom: 13vh;
-	left: 15%;
+	left: 18%;
 }
 
 
@@ -273,7 +273,7 @@ animation: balloonFloat 3s infinite;
 
 #p4 {
 	font-size: 38px;
-	font-family: 'Baloo Bhaina', cursive;
+	font-family: 'Baloo Bhaina', Helvetica, sans-serif;
 	font-style: italic;
 	color: white;
 	text-align: center;
@@ -367,14 +367,29 @@ animation: balloonFloat 3s infinite;
 canvas {
 position: absolute;
 top: 0px;
+width: 100vw;
+height: 100vh;
 }
 
 #p5  {
 	font-size: 38px;
-	font-family: 'Baloo Bhaina', cursive;
+	font-family: 'Baloo Bhaina', Helvetica, sans-serif;
 	color: black;
 	text-align: center;
-	line-height: 40px;
+	line-height: 45px;
 	width: 70vw;
-	margin-top: 5vh;
+	margin-top: 7vh;
+}
+
+/*Blue*/
+
+#bluebod {
+	background-color: #0098FF;
+}
+
+#eye {
+	position: absolute;
+	margin-left: 33vw;
+	top: 22vh;
+	width: 400px;
 }
