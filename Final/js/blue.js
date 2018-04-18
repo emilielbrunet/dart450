@@ -37,22 +37,8 @@ eatSound = new Audio('sound/smash.wav');
   });
 
 	function plateDrop(event, ui) {
-		if ($('#plate1').dragged) {
-			// Make the plate smash by changing img background
-						$('#plate1').css('background-image','url(images/smashed2.png)');
-		}
-		if ($('#plate2').dragged) {
-			// Make the plate smash by changing img background
-						$('#plate2').css('background-image','url(images/smashed2.png)');
-		}
-		if ($('#plate3').dragged) {
-			// Make the plate smash by changing img background
-						$('#plate3').css('background-image','url(images/smashed2.png)');
-		}
-		if ($('#plate4').dragged) {
-			// Make the plate smash by changing img background
-						$('#plate4').css('background-image','url(images/smashed2.png)');
-		}
+// Make the plate smash by changing img background
+		ui.draggable.css('background-image','url(images/smashed2.png)');
 //Start playing the smash audio
 			smashSound.play();
 
