@@ -35,6 +35,11 @@ $(document).ready(function() {
     }
   });
 
+  //function to open next page with delay
+    				function pageLoad() {
+    					window.location.assign("blue.html");
+    				}
+
   // when Annyang hears a word being said, it will appear in the following function
   function userSaidAWord(word) {
     // make sure the interaction is not over
@@ -43,10 +48,10 @@ $(document).ready(function() {
       return;
     }
     // check if the user said the right thing
-    if (word === 'I am terrible') {
+    if (word === 'loser') {
       // if the user said 'I am terrible'go to the next page
-      $('body').css({
-        backgroundColor: 'blue'
-      });
+      //delay the function called pageLoad by 1.5 seconds and then go to new page
+  			setTimeout(pageLoad,1000);
+        console.log("heard ya!");
+  			}
     }
-  }
