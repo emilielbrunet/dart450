@@ -420,9 +420,37 @@ top: -300px;
 
 /* Plates */
 
-.plate1 {
-	width: 172px;
+#plate1 {
+	width: 170px;
 	height: 190px;
+	background-image: url(../images/plate1.png);
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+}
+#plate2 {
+	width: 170px;
+	height: 190px;
+	background-image: url(../images/plate1.png);
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+}
+#plate3 {
+	width: 170px;
+	height: 190px;
+	background-image: url(../images/plate1.png);
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+}
+#plate4 {
+	width: 170px;
+	height: 190px;
+	background-image: url(../images/plate1.png);
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
 }
 
 #shelf {
@@ -433,7 +461,13 @@ top: -300px;
 #plateWrap {
 	width: 700px;
 	margin: auto;
-	height: 30vh;
-	overflow: hidden;
+	height: 220px;
+	position: center;
+}
+
+#floor {
+	width: 100%;
+	margin: auto;
+	height: 40vh;
 	position: center;
 }
