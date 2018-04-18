@@ -420,31 +420,7 @@ top: -300px;
 
 /* Plates */
 
-#plate1 {
-	width: 170px;
-	height: 190px;
-	background-image: url(../images/plate1.png);
-	background-size: cover;
-	background-position: center;
-	display: inline-block;
-}
-#plate2 {
-	width: 170px;
-	height: 190px;
-	background-image: url(../images/plate1.png);
-	background-size: cover;
-	background-position: center;
-	display: inline-block;
-}
-#plate3 {
-	width: 170px;
-	height: 190px;
-	background-image: url(../images/plate1.png);
-	background-size: cover;
-	background-position: center;
-	display: inline-block;
-}
-#plate4 {
+.plates {
 	width: 170px;
 	height: 190px;
 	background-image: url(../images/plate1.png);

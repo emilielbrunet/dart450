@@ -8,8 +8,6 @@ Library:
 Plugin for mobile touch drag and drop http://touchpunch.furf.com/)
 **********************************************/
 
-
-var scrapeSound;
 var smashSound;
 
 //function to open next page with delay
@@ -21,30 +19,45 @@ $(document).ready(function() {
 
 //DROP EVENT 1
 //
-//Set Sound effect variables (fly buzzing and eating sound)
-flySound = new Audio('sound/fork.wav');
+//Set Sound effect variables (smashed plate sound)
 eatSound = new Audio('sound/smash.wav');
 
-//Make the fly draggable
-    $( "#plate1" ).draggable();
+//Make the plates draggable
+    $( ".plates" ).draggable();
 
-//Make the mouth a droppable target
-//Add an event handler function for 'drop' called flyDrop
+//Make #floor a droppable target
+//Add an event handler function for 'drop' called plateDrop
     $( "#floor" ).droppable({
 		drop: plateDrop
 		});
-// flyDrop
+
+// plateDrop
 //
 
   });
 
 	function plateDrop(event, ui) {
-// Make the mouth close
-			$(this).css('background-image','url(images/smashed1.png)');
+		if ($('#plate1').dragged) {
+			// Make the plate smash by changing img background
+						$('#plate1').css('background-image','url(images/smashed2.png)');
+		}
+		if ($('#plate2').dragged) {
+			// Make the plate smash by changing img background
+						$('#plate2').css('background-image','url(images/smashed2.png)');
+		}
+		if ($('#plate3').dragged) {
+			// Make the plate smash by changing img background
+						$('#plate3').css('background-image','url(images/smashed2.png)');
+		}
+		if ($('#plate4').dragged) {
+			// Make the plate smash by changing img background
+						$('#plate4').css('background-image','url(images/smashed2.png)');
+		}
 //Start playing the smash audio
 			smashSound.play();
-//Start playing the fork audio
-			forkSound.play();
-//delay the function called pageLoad by 1.5 seconds and then go to new page
-      setTimeout(pageLoad,1000)
+
+		if ($('.plates').length ==0) {
+	    //delay the function called pageLoad by 1.5 seconds and then go to new page
+	  			setTimeout(pageLoad,1000)
+	    };
 }
