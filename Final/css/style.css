@@ -417,3 +417,23 @@ top: -300px;
 	overflow: hidden;
 	position: center;
 }
+
+/* Plates */
+
+.plate1 {
+	width: 172px;
+	height: 190px;
+}
+
+#shelf {
+	margin-top: -148px;
+	width: 100%;
+}
+
+#plateWrap {
+	width: 700px;
+	margin: auto;
+	height: 30vh;
+	overflow: hidden;
+	position: center;
+}
