@@ -21,7 +21,7 @@ $(document).ready(function() {
 //Set Sound effect variables (popping sound)
 popSound = new Audio('sound/squish-wet.wav');
 
-$('.pimple').on('clickhold',function() {
+$('.pimple').on('mousedown',function() {
   $(this).effect('shake', {
     times: 10,
     distance: 1.5
