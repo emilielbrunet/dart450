@@ -20,7 +20,7 @@ $(document).ready(function() {
 //DROP EVENT 1
 //
 //Set Sound effect variables (smashed plate sound)
-eatSound = new Audio('sound/smash.wav');
+smashSound = new Audio('sound/smash.wav');
 
 //Make the plates draggable
     $( ".plates" ).draggable();
@@ -33,16 +33,17 @@ eatSound = new Audio('sound/smash.wav');
 
 // plateDrop
 //
-
   });
 
 	function plateDrop(event, ui) {
 // Make the plate smash by changing img background
 		ui.draggable.css('background-image','url(images/smashed2.png)');
+		$(this).removeClass("unbroken");
 //Start playing the smash audio
 			smashSound.play();
-
-		if ($('.plates').length ==0) {
+//search for any remainig plates with the #unbroken class
+//if none remain call setTimeout function
+		if ($('.unbroken').length ==0) {
 	    //delay the function called pageLoad by 1.5 seconds and then go to new page
 	  			setTimeout(pageLoad,1000)
 	    };
