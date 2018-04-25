@@ -419,6 +419,7 @@ position: absolute;
 top: 0px;
 width: 100vw;
 height: 100vh;
+	z-index: -99;
 }
 
 #p5  {
@@ -429,6 +430,14 @@ height: 100vh;
 	line-height: 38px;
 	width: 70vw;
 	margin-top: 7vh;
+}
+
+#endlink {
+	text-decoration:none;
+	color:black;
+	cursor:pointer;
+	font-family: 'Asap Condensed', sans-serif;
+	font-size: 18px;
 }
 
 /*Blue*/
