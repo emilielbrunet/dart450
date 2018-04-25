@@ -63,51 +63,7 @@ font-family: 'Asap Condensed', sans-serif;
 	left: 15%;
 }
 
-/* Fly and Mouth */
-
-#teeth {
-    width: 150px;
-    height: 80px;
-    padding: 10px;
-	position: absolute;
-	top: 165px;
-	left: 150px;
-	background: none;
-	border: none;
-}
-
-#mouth {
-	position: relative;
-	margin: auto;
-	padding-top: 80px;
-	width: 500px;
-	height: 350px;
-	background-image: url(../images/mouth_open.png);
-	background-size: cover;
-	background-position: center;
-}
-
-#flybod {
-	background: #7875FF;
-}
-
-#mouthHolder {
-	width: 800px;
-	height: 400px;
-	margin:auto;
-	top: 14vh;
-}
-
-#fly {
-	width: 100px;
-	height: 70px;
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-
-/* Bear and Zone */
+/* Bear */
 
 
 #zone {
@@ -197,6 +153,35 @@ font-family: 'Asap Condensed', sans-serif;
 	position: relative;
 }
 
+/* Plates */
+
+.plates {
+	width: 170px;
+	height: 190px;
+	background-image: url(../images/plate1.png);
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+}
+
+#shelf {
+	margin-top: -148px;
+	width: 100%;
+}
+
+#plateWrap {
+	width: 700px;
+	margin: auto;
+	height: 220px;
+	position: center;
+}
+
+#floor {
+	width: 100%;
+	margin: auto;
+	height: 40vh;
+	position: center;
+}
 
 /* Balloon */
 
@@ -233,7 +218,6 @@ animation: balloonFloat 3s infinite;
 
 /*Nose*/
 
-
 #trigger {
   position:absolute;
   max-width: 1px;
@@ -261,6 +245,49 @@ animation: balloonFloat 3s infinite;
 #nosebod, #nosehtml {
 	background: #F93465;
   height: 1500px;
+}
+
+/* Fly and Mouth */
+
+#teeth {
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+	position: absolute;
+	top: 165px;
+	left: 150px;
+	background: none;
+	border: none;
+}
+
+#mouth {
+	position: relative;
+	margin: auto;
+	padding-top: 80px;
+	width: 500px;
+	height: 350px;
+	background-image: url(../images/mouth_open.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#flybod {
+	background: #7875FF;
+}
+
+#mouthHolder {
+	width: 800px;
+	height: 400px;
+	margin:auto;
+	top: 14vh;
+}
+
+#fly {
+	width: 100px;
+	height: 70px;
+	background: none;
+	border: none;
+	cursor: pointer;
 }
 
 /*Pimples*/
@@ -385,13 +412,6 @@ height: 100vh;
 	background-color: #0098FF;
 }
 
-#eye {
-	position: absolute;
-	margin-left: 33vw;
-	top: 22vh;
-	width: 400px;
-}
-
 /*Mirror*/
 
 #redbod {
@@ -417,38 +437,9 @@ top: -300px;
 	position: center;
 }
 
-/* Plates */
-
-.plates {
-	width: 170px;
-	height: 190px;
-	background-image: url(../images/plate1.png);
-	background-size: cover;
-	background-position: center;
-	display: inline-block;
-}
-
-#shelf {
-	margin-top: -148px;
-	width: 100%;
-}
-
-#plateWrap {
-	width: 700px;
-	margin: auto;
-	height: 220px;
-	position: center;
-}
-
-#floor {
-	width: 100%;
-	margin: auto;
-	height: 40vh;
-	position: center;
-}
 /* MOBILE VERSIONS  */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
 	html, body {
 		width: 100%;
@@ -457,8 +448,8 @@ top: -300px;
 	}
 
 	#logo{
-		width: 200px;
-		height: 130px;
+		width: 150px;
+		height: 100px;
 		background-image: url(../images/smush_logo.png);
 		background-size: cover;
 		margin-top: 0px;
@@ -466,13 +457,425 @@ top: -300px;
 	}
 
 	#logo2{
-		width: 200px;
-		height: 130px;
+		width: 150px;
+		height: 100px;
 		background-image: url(../images/smush_logo.png);
 		background-size: cover;
 		margin-top: 0px;
 		margin-left: 0px;
 	  position: fixed;
 	}
+
+	/* Header */
+
+	p {
+	font-family: 'Asap Condensed', sans-serif;
+		font-size: 18px;
+		text-align: center;
+		margin-bottom: 10px;
+		margin-left: 15vw;
+		margin-right: 15vw;
+	}
+
+	#p2 {
+		font-size: 30px;
+		font-family: 'Baloo Bhaina', Helvetica, sans-serif;
+		font-style: italic;
+		color: white;
+		text-align: center;
+		line-height: 36px;
+	}
+
+	#prompt1 {
+		position:absolute;
+		bottom: 55px;
+		width:105vw;
+	}
+
+	#prompt2 {
+		position: fixed;
+		text-align: center;
+		bottom: 55px;
+		width: 100%;
+	}
+
+	/* Bear */
+
+
+	#zone {
+	  width: 200px;
+	  height: 200px;
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 12vh;
+		background: none;
+		border: dashed black 3px;
+	}
+
+	#zone1 {
+		width: 90vw;
+	  height: 120px;
+	  padding: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -320px;
+		background: none;
+		border: none;
+		position: relative;
+	}
+
+	#zone2 {
+		width: 32vw;
+		height: 210px;
+		margin-left: 2vw;
+		margin-right: auto;
+		margin-top: 0px;
+		background: none;
+		display: inline-block;
+		border: none;
+		position: relative;
+	}
+
+	#zone3 {
+		width: 30vw;
+		height: 210px;
+		margin-left: 32vw;
+		margin-top: 0px;
+		background: none;
+		display: inline-block;
+		border: none;
+		position: relative;
+	}
+
+	#zone4 {
+	  width: 90vw;
+	  height: 150px;
+	  padding: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		background: none;
+		border: none;
+		position: relative;
+	}
+
+	#bearbod {
+		background: #00CB5F;
+	}
+
+	#bear {
+		width: 100px;
+		height: 160px;
+		background-image: url(../images/bear.png);
+		background-size: cover;
+		background-position: center;
+		background-color:rgba(0,0,0,0.00);
+		border: none;
+		position: absolute;
+		top: 30px;
+		left: 60px;
+		padding: 3px;
+		cursor: pointer;
+	}
+
+	#comfortZone {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 6vh;
+		width: 200px;
+		height: 200px;
+		box-sizing: border-box;
+		position: relative;
+	}
+
+	/* Plates */
+
+	.plates {
+		width: 86px;
+		height: 86px;
+		background-image: url(../images/plate1.png);
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+	}
+
+	#shelf {
+		margin-top: -73px;
+		width: 100%;
+		display: block;
+	}
+
+	#plateWrap {
+		width: 95vw;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 8vh;
+		height: 100px;
+		position: center;
+	}
+
+	#floor {
+		width: 100%;
+		margin: auto;
+		height: 40vh;
+		position: center;
+	}
+
+	/* Balloon */
+
+	#balloonbod {
+		background: #FF9500;
+	}
+
+	#balloon {
+		width: 400px;
+		height: 720px;
+		position: absolute;
+		left: 43vw;
+		-webkit-animation: balloonFloat 3s infinite; /* Safari 4.0 - 8.0 */
+	animation: balloonFloat 3s infinite;
+	}
+
+	@-webkit-keyframes balloonFloat{
+		from {top: 10px; -webkit-animation-timing-function: ease-in-out;}
+		50% {top: 20px; -webkit-animation-timing-function: ease-in-out;}
+		to {top: 10px; -webkit-animation-timing-function: ease-in-out;}
+	}
+
+	@keyframes balloonFloat{
+		from {top: 70px; -webkit-animation-timing-function: ease-in-out;}
+		50% {top: 80px; -webkit-animation-timing-function: ease-in-out;}
+		to {top: 70px; -webkit-animation-timing-function: ease-in-out;}
+	}
+
+	.pop {
+		transition-duration: 0.15s;
+		transform: scale(1.35);
+		opacity: 0;
+	}
+
+	/*Nose*/
+
+	#trigger {
+	  position:absolute;
+	  max-width: 1px;
+	  max-height: 1px;
+	  opacity: 0;
+	  top: 365px;
+	  left: 75px;
+	}
+
+	#nose {
+	  position:relative;
+		margin: auto;
+	  height: 450px;
+		z-index: -1;
+	}
+
+	#noseholder{
+		position: fixed;
+	  top: 5vh;
+		left: 30px;
+	  height: 1500px;
+		width: 80%;
+		box-sizing: border-box;
+	}
+
+	#nosebod, #nosehtml {
+		background: #F93465;
+		max-width: 100%;
+	  height: 1500px;
+	}
+
+	/* Fly and Mouth */
+
+	#teeth {
+	    width: 150px;
+	    height: 80px;
+	    padding: 10px;
+		position: absolute;
+		top: 165px;
+		left: 150px;
+		background: none;
+		border: none;
+	}
+
+	#mouth {
+		position: relative;
+		margin: auto;
+		padding-top: 80px;
+		width: 350px;
+		height: 215px;
+		background-image: url(../images/mouth_open.png);
+		background-size: cover;
+		background-position: center;
+	}
+
+	#flybod {
+		background: #7875FF;
+	}
+
+	#mouthHolder {
+		width: 100vw;
+		height: 400px;
+		margin:auto;
+		top: 14vh;
+	}
+
+	#fly {
+		width: 80px;
+		height: 60px;
+		padding-left: 5px;
+		margin: 10px;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	/*Pimples*/
+
+	#pimpbod {
+		background: #F2B598;
+	}
+
+	#p4 {
+		font-size: 32px;
+		font-family: 'Baloo Bhaina', Helvetica, sans-serif;
+		font-style: italic;
+		color: white;
+		text-align: center;
+		line-height: 40px;
+	}
+
+	.pimple {
+		border-radius: 50%;
+		background-image: radial-gradient(#FFD2C2 10%, #E38C76 70%);
+		cursor: pointer;
+	}
+
+	#zit1 {
+		width: 60px;
+		height: 60px;
+		margin: auto;
+	}
+
+	#zit2 {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 30vh;
+		left: 25vw;
+	}
+
+	#zit3 {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 20vh;
+		right: 10vw;
+	}
+
+	#zit4 {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 15vh;
+		left: 5vw;
+	}
+
+	#zit5 {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 12vh;
+		right: 23vw;
+	}
+
+	#zit6 {
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 48vh;
+		left: 20vw;
+	}
+
+	#zit7 {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 44vh;
+		right: 20vw;
+	}
+
+	#zit8 {
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		top: 20vh;
+		left: 30vw;
+	}
+
+	#zit9 {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 36vh;
+		left: 43vw;
+	}
+
+	.burst {
+		background: url(images/splat3.png);
+		background-size: cover;
+		background-position: center;
+	}
+
+	/*End*/
+
+	canvas {
+	position: absolute;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	}
+
+	#p5  {
+		font-size: 22px;
+		font-family: 'Baloo Bhaina', Helvetica, sans-serif;
+		color: black;
+		text-align: center;
+		line-height: 28px;
+		width: 85vw;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 6vh;
+		margin-bottom: 25px;
+	}
+
+	/*Mirror*/
+
+	#redbod {
+			background-color: #D30000;
+	}
+
+	#video {
+		width: 80%;
+		margin-top: 15px;
+		z-index: -99;
+	}
+
+	#mirror {
+	position: relative;
+	width: 150%;
+	left: -23%;
+	top: -280px;
+	}
+
+	#mirrorWrap {
+		width: 99%;
+		margin: auto;
+		height: 80vh;
+		overflow: hidden;
+	}
+
 
 }
