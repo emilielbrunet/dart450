@@ -730,6 +730,22 @@ top: -300px;
 		background: none;
 		border: none;
 		cursor: pointer;
+		position: absolute;
+		-webkit-animation: flyFly 10s infinite; /* Safari 4.0 - 8.0 */
+	animation: flyFly 10s infinite;
+	}
+
+	@-webkit-keyframes balloonFloat{
+		from {top: 10px; -webkit-animation-timing-function: ease-in-out;}
+		10% {top: 20px; -webkit-animation-timing-function: ease-in-out;}
+		to {top: 10px; -webkit-animation-timing-function: ease-in-out;}
+	}
+
+	@keyframes balloonFloat{
+		from {top: 70px; -webkit-animation-timing-function: ease-in-out;}
+		50% {top: 80px; -webkit-animation-timing-function: ease-in-out;}
+		to {top: 70px; -webkit-animation-timing-function: ease-in-out;}
+	}
 	}
 
 	/*Pimples*/
