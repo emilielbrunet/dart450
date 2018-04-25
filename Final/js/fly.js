@@ -14,7 +14,7 @@ var eatSound;
 
 //function to open next page with delay
 				function pageLoad() {
-					window.location.assign("balloon.html");
+					window.location.assign("pimples.html");
 				}
 
 $(document).ready(function() {

@@ -21,7 +21,7 @@ bearSound = new Audio('sound/dog-toy.wav');
 //
 //function to open next page with delay
 				function pageLoad() {
-					window.location.assign("fly.html");
+					window.location.assign("blue.html");
 				}
 //Called when the user drops something onto the droppable element
 	function bearDrop(event, ui) {

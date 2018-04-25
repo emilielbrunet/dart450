@@ -37,7 +37,7 @@ $(document).ready(function() {
 
   //function to open next page with delay
     				function pageLoad() {
-    					window.location.assign("blue.html");
+    					window.location.assign("end.html");
     				}
 
   // when Annyang hears a word being said, it will appear in the following function

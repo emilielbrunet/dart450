@@ -12,7 +12,7 @@ var smashSound;
 
 //function to open next page with delay
 				function pageLoad() {
-					window.location.assign("end.html");
+					window.location.assign("balloon.html");
 				}
 
 $(document).ready(function() {

@@ -23,7 +23,7 @@ var popSound;
 
 //function to open next page with delay
 				function pageLoad() {
-					window.location.assign("pimples.html");
+					window.location.assign("nose.html");
 				}
 
 $(document).ready(function() {
