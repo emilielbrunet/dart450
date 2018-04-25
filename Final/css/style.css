@@ -288,11 +288,36 @@ animation: balloonFloat 3s infinite;
 	background: none;
 	border: none;
 	cursor: pointer;
+	position: absolute;
+	transition-duration: 3s;
+	-webkit-animation: flyFly 10s infinite; /* Safari 4.0 - 8.0 */
+animation: flyFly 10s infinite;
 }
+
+@keyframes flyFly{
+	from {top: 80vh; -webkit-animation-timing-function: ease-in-out;}
+	10% {top: 50vh; left: 20vw; -webkit-animation-timing-function: ease-in-out;}
+	30% {top: 20vh; left: 40vw; -webkit-animation-timing-function: ease-in-out;}
+	40% {top: 30vh; left: 80vw; -webkit-animation-timing-function: ease-in-out;}
+	60% {top: 60vh; left: 30vw; -webkit-animation-timing-function: ease-in-out;}
+	80% {top: 70vh; left: 15vw; -webkit-animation-timing-function: ease-in-out;}
+	to {top: 80vh; -webkit-animation-timing-function: ease-in-out;}
+}
+
+@-webkit-keyframes flyFly{
+	from {top: 80vh; -webkit-animation-timing-function: ease-in-out;}
+	10% {top: 50vh; left: 20vw; -webkit-animation-timing-function: ease-in-out;}
+	30% {top: 20vh; left: 40vw; -webkit-animation-timing-function: ease-in-out;}
+	40% {top: 30vh; left: 80vw; -webkit-animation-timing-function: ease-in-out;}
+	60% {top: 60vh; left: 30vw; -webkit-animation-timing-function: ease-in-out;}
+	80% {top: 70vh; left: 15vw; -webkit-animation-timing-function: ease-in-out;}
+	to {top: 80vh; -webkit-animation-timing-function: ease-in-out;}
+}
+
 
 /*Pimples*/
 
-#pimpbod {
+.pimplebody {
 	background: #F2B598;
 }
 
@@ -397,11 +422,11 @@ height: 100vh;
 }
 
 #p5  {
-	font-size: 38px;
+	font-size: 30px;
 	font-family: 'Baloo Bhaina', Helvetica, sans-serif;
 	color: black;
 	text-align: center;
-	line-height: 45px;
+	line-height: 38px;
 	width: 70vw;
 	margin-top: 7vh;
 }
@@ -731,21 +756,29 @@ top: -300px;
 		border: none;
 		cursor: pointer;
 		position: absolute;
+		transition-duration: 3s;
 		-webkit-animation: flyFly 10s infinite; /* Safari 4.0 - 8.0 */
 	animation: flyFly 10s infinite;
 	}
 
-	@-webkit-keyframes balloonFloat{
-		from {top: 10px; -webkit-animation-timing-function: ease-in-out;}
-		10% {top: 20px; -webkit-animation-timing-function: ease-in-out;}
-		to {top: 10px; -webkit-animation-timing-function: ease-in-out;}
+	@keyframes flyFly{
+		from {top: 60vh; left: 10vw; -webkit-animation-timing-function: ease-in-out;}
+		10% {top: 50vh; left: 20vw; -webkit-animation-timing-function: ease-in-out;}
+		30% {top: 20vh; left: 40vw; -webkit-animation-timing-function: ease-in-out;}
+		40% {top: 30vh; left: 70vw; -webkit-animation-timing-function: ease-in-out;}
+		60% {top: 40vh; left: 30vw; -webkit-animation-timing-function: ease-in-out;}
+		80% {top: 50vh; left: 20vw; -webkit-animation-timing-function: ease-in-out;}
+		to {top: 60vh; left: 10vw;-webkit-animation-timing-function: ease-in-out;}
 	}
 
-	@keyframes balloonFloat{
-		from {top: 70px; -webkit-animation-timing-function: ease-in-out;}
-		50% {top: 80px; -webkit-animation-timing-function: ease-in-out;}
-		to {top: 70px; -webkit-animation-timing-function: ease-in-out;}
-	}
+	@-webkit-keyframes flyFly{
+		from {top: 60vh; left: 10vw;-webkit-animation-timing-function: ease-in-out;}
+		10% {top: 50vh; left: 20vw; -webkit-animation-timing-function: ease-in-out;}
+		30% {top: 20vh; left: 40vw; -webkit-animation-timing-function: ease-in-out;}
+		40% {top: 30vh; left: 70vw; -webkit-animation-timing-function: ease-in-out;}
+		60% {top: 40vh; left: 30vw; -webkit-animation-timing-function: ease-in-out;}
+		80% {top: 50vh; left: 20vw; -webkit-animation-timing-function: ease-in-out;}
+		to {top: 60vh; left: 10vw;-webkit-animation-timing-function: ease-in-out;}
 	}
 
 	/*Pimples*/
