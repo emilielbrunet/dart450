@@ -1,3 +1,11 @@
+/**********************************************
+
+DART 450, Winter 2018
+SMUSH
+Émilie Brunet
+
+**********************************************/
+
 var bearSound;
 
 $(document).ready(function() {

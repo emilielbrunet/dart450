@@ -1,9 +1,14 @@
-//
-//
-//
-// Borrowed code:
-// Access to webcam: https://codepen.io/syedmurtaza/pen/oeYMNm
+/**********************************************
 
+DART 450, Winter 2018
+SMUSH
+Émilie Brunet
+
+Borrowed code:
+Access to webcam: https://codepen.io/syedmurtaza/pen/oeYMNm
+**********************************************/
+
+//set variable for Annyang to check if the desired word has been said yet or not
 var gameOver = false;
 
 $(document).ready(function() {
@@ -19,6 +24,7 @@ $(document).ready(function() {
    });
   }
 
+//if statement for when Annyang hears a word
     if (annyang) {
 
       var command = {
@@ -49,7 +55,7 @@ $(document).ready(function() {
     }
     // check if the user said the right thing
     if (word === 'loser') {
-      // if the user said 'I am terrible'go to the next page
+      // if the user said 'loser'go to the next page
       //delay the function called pageLoad by 1.5 seconds and then go to new page
   			setTimeout(pageLoad,1000);
         console.log("heard ya!");

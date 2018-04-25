@@ -7,12 +7,13 @@ FINAL PROJECT
 Using scroll to make a nose snot drip and recede.
 
 Libraries:
-
 jQuery Easing Plugin: http://gsgd.co.uk/sandbox/jquery/easing/
 **********************************************/
 
+//set jQuery easing for the snot
 jQuery.easing.def = "string";
 
+//set variable for the snot sniffing audio
 var snotSound;
 
 $(document).ready(function () {
@@ -41,12 +42,13 @@ $(document).ready(function () {
 					window.location.assign("fly.html");
 				}
 
+//Call function when user scrolls up
 function handleScroll() {
   // If they scrolled back to the top of the page
   if ($(document).scrollTop() ===  0) {
     // Play snot noise
           snotSound.play();
-    // Stop any current animation (like the snot going down)
+    // Stop the snot from dripping
     $('#trigger').stop();
     // Animate the snot back in
     $('#trigger').animate({

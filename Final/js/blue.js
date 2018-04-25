@@ -34,14 +34,15 @@ smashSound = new Audio('sound/smash.wav');
 // plateDrop
 //
   });
-
+//call the plateDrop event when a plate is dragged and dropped onto the #floor
 	function plateDrop(event, ui) {
 // Make the plate smash by changing img background
 		ui.draggable.css('background-image','url(images/smashed2.png)');
+//remove the class .unbroken from whichever plate was dragged
 		ui.draggable.removeClass("unbroken");
 //Start playing the smash audio
 			smashSound.play();
-//search for any remainig plates with the #unbroken class
+//search for any remainig plates with the .unbroken class
 //if none remain call setTimeout function
 		if ($(".unbroken").length ==0) {
 	    //delay the function called pageLoad by 1.5 seconds and then go to new page

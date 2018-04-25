@@ -8,7 +8,7 @@ Library:
 Plugin for mobile touch drag and drop http://touchpunch.furf.com/)
 **********************************************/
 
-
+//set variables for audio links
 var flySound;
 var eatSound;
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 //DROP EVENT 1
 //
-//Set Sound effect variables (fly buzzing and eating sound)
+//Set sound effect variables (fly buzzing and eating sound)
 flySound = new Audio('sound/fly.wav');
 eatSound = new Audio('sound/eating_1.mp3');
 
@@ -41,6 +41,7 @@ flySound.play();
 
   });
 
+//call the flyDrop event when #fly has been dropped on #teeth
 	function flyDrop(event, ui) {
 // Make the mouth close
 			$('#mouth').css('background-image','url(images/mouth_closed.png)');

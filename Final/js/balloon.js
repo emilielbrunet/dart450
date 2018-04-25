@@ -1,7 +1,7 @@
 /**********************************************
 
 DART 450, Winter 2018
-Exercise 8
+SMUSH
 Émilie Brunet
 
 Library:
