@@ -105,7 +105,7 @@ function update () {
   // Make sure our volume meter actually exists
   //
   if (meter) {
-    if (meter.volume > 0.3) {
+    if (meter.volume > 0.1) {
 
       // Yell
       //
